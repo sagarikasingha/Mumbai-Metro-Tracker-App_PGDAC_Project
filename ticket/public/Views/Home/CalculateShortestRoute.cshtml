@@ -1,0 +1,29 @@
+@model IEnumerable<MyWebApp.Models.Station>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Journey Planner</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Shortest Route:</h2>
+        @if (Model != null && Model.Any())
+        {
+            <ul>
+                @foreach (var station in Model)
+                { @if(station != null){
+                    <li>@station.StationName</li>
+                    }
+                }
+            </ul>
+        }
+        else
+        {
+            <p>No route found between the selected stations.</p>
+        }
+    </div>
+</body>
+</html>

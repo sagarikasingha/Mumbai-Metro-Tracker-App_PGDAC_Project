@@ -1,0 +1,1047 @@
+
+/* Geeks layout nav */
+@import url(
+'https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+
+		/* First make all margin and padding 0 */
+		* {
+			margin: 0px;
+			padding: 0px;
+			
+		}
+
+		/* Second work on image*/
+		header img {
+			display: block;
+			/* height: 84px; */
+			cursor: pointer;
+			margin-right: auto;
+		}
+
+		/* Changes the styling of links if necessary */
+		li,
+		a,
+		button {
+			font-family: "Montserrat", sans-serif;
+			font-weight: 800;
+			font-size: 16px;
+			/* color: whitesmoke; */
+			text-decoration: none;
+			color: white;
+		}
+
+		/* Now start positioning the links and images 
+		according to your convinence */
+		header {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			padding: 30px 10%;
+            background-color: rgb(19, 6, 6);
+		}
+
+		.navigate_links {
+			list-style: none;
+		}
+
+		.navigate_links li {
+			display: inline-block;
+			padding: 10px 20px;
+		}
+
+		.navigate_links li a {
+			transition: all 0.3s ease-in-out 0s;
+		}
+
+		/* Add some transition to make navigation 
+		bar attractive */
+		.navigate_links li a:hover {
+			color: greenyellow;
+			border: 2px solid #00b8ca;
+			box-shadow: 3px 3px 3px red, 3px 3px 3px  #00b8ca;  /* blue */
+			border-radius: 8px;
+			margin: 10px;
+			padding: 12px;
+		}
+
+		 button {
+			margin-left: 20px;
+			padding: 9px 15px;
+			border-radius: 15px;
+			/* background-color: rgb(89, 61, 248); */
+            background-color: #00b8ca;
+			color: rgb(243, 236, 236);
+			border: none;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out 0s;
+            font-weight: bold;
+		}
+
+		button:hover {
+			/* background-color: rgb(219, 221, 81); */
+            /* background-color: #D63484; */
+            /* background-color: rgb(169, 156, 244); */
+              background-color: #76e0ea;
+			color: black;
+            font-weight: bolder;
+
+		}
+        
+/******************************** Travelling train Video *******************************************/
+
+/* video > source{
+    width: 10rem;
+} */
+
+
+/******************************** Crousel Sliding Div css *******************************************/
+/* .cards_div{
+    width: 100px;
+    margin-top: 1rem;
+} */
+
+.carousel {
+    margin-left: 15%;
+    margin-right: 15%;
+     /* margin-top: 10rem;
+     padding: 1rem; */
+}
+
+ul.slides {
+    display: block;
+    position: relative;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+ul.slides input {
+    display: none; 
+}
+
+
+.slide-container { 
+    display: block; 
+}
+
+.slide-image {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+}   
+
+.slide-image img {
+    width: auto;
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 100px;
+    line-height: 600px;
+    color: #fff;
+}
+
+.carousel-controls label {
+    display: none;
+    position: absolute;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+.slide-image:hover + .carousel-controls label{
+    opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+    opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+    width: 49%;
+    text-align: left;
+    left: 0;
+}
+
+.carousel-controls .next-slide {
+    width: 49%;
+    text-align: right;
+    right: 0;
+}
+
+.carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 999;
+    text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+input:checked + .slide-container .slide-image {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+     display: block; 
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+	opacity: 1;
+}
+
+
+input:checked + .slide-container .nav label { display: block; }
+
+/**************************************** Cards With Data ************************************************/
+  * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .flex-container {
+  display: flex;
+  background-color: #f1f1f1;
+}
+
+/* .flex-container > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+} */
+ 
+        /*apply css properties to body*/
+ 
+        /* body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+        }
+  */
+        /*apply css properties to container class*/
+ 
+        .container {
+            position: relative;
+            width: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 35px;
+        }
+ 
+        /*apply css properties to card class*/
+ 
+        .container .card {
+            height: 220px;
+            max-width: 200px;
+            position: relative;
+            margin: 30px 10px;
+            padding: 20px 15px;
+            background: wheat;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 202px black;
+            transition: 0.3s ease-in-out;
+        }
+ 
+        /*apply css properties to card class when it get pointed by cursor*/
+ 
+        .container .card:hover {
+            height: 420px;
+        }
+ 
+        /*apply css properties to imgbox class*/
+ 
+        .containe .card .imgbox {
+            position: relative;
+            width: 260px;
+            height: 360px;
+            top: -60px;
+            left: 20px;
+        }
+ 
+        /*apply css properties to img tag*/
+ 
+        .container .card .imgbox img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+ 
+        /*apply css properties to content class*/
+ 
+        .container .card .content {
+            position: relative;
+            margin-top: -100px;
+            padding: 10px 15px;
+            text-align: center;
+            color: #111;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+ 
+        /*apply css properties to content when card gets hovered*/
+ 
+        .container .card:hover .content {
+            visibility: visible;
+            opacity: 1;
+            margin-top: -10px;
+            transition-delay: 0.3s;
+        }
+ 
+
+
+/*************************************** Images rows Sliding ***************************************************/
+/* * {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    align-items: center;
+    background: #fff;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+} */
+
+.slider {
+    background: white;
+    height: 250px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 1140px;
+}
+
+.slider::before, .slider::after {
+    background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    animation: scroll 80s linear infinite;
+    display: flex;
+    width: calc(250px * 18);
+
+}
+
+.slider .slide-track:hover {
+    animation-play-state: paused;
+}
+
+.slider .slide {
+    height: 250px;
+    width: 250px;
+}
+
+
+.slide:nth-child(1), .slide:nth-child(10) {
+    background-color: yellow;
+}
+
+.slide:nth-child(2), .slide:nth-child(11) {
+    background-color: coral;
+}
+
+.slide:nth-child(3), .slide:nth-child(12) {
+    background-color: blue;
+}
+
+.slide:nth-child(4), .slide:nth-child(13) {
+    background-color: red;
+}
+
+.slide:nth-child(5), .slide:nth-child(14) {
+    background-color: orange;
+}
+
+.slide:nth-child(6), .slide:nth-child(15) {
+    background-color: purple;
+}
+
+.slide:nth-child(7), .slide:nth-child(16) {
+    background-color: pink;
+}
+
+.slide:nth-child(8), .slide:nth-child(17) {
+    background-color: navy;
+}
+
+.slide:nth-child(9), .slide:nth-child(18) {
+    background-color: lime;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+}
+
+.slider> img{
+     /* width: fit-content;
+     height: fit-content; */
+
+
+}
+
+/****************************************  Footer Animation *************************************************/
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul li {
+  list-style: none;
+  color: #fff;
+}
+/* body {
+  display: grid;
+  grid-template-rows: 1fr 10rem auto;
+  grid-template-areas: "main" "." "footer";
+  overflow-x: hidden;
+  background: #F5F7FA;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+} */
+footer{
+    position: relative;
+}
+body .footer {
+  z-index: 1;
+  --footer-background:rgb(91, 73, 255);
+  display: grid;
+  position: relative;
+  grid-area: footer;
+  min-height: 12rem;
+}
+body .footer .bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background: var(--footer-background);
+  filter: url("#blob");
+}
+body .footer .bubbles .bubble {
+  position: absolute;
+  left: var(--position, 50%);
+  background: var(--footer-background);
+  border-radius: 100%;
+  -webkit-animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+          animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+  transform: translate(-50%, 100%);
+}
+body .footer .content {
+  padding: 6rem 1rem 2rem;
+  background: var(--footer-background);
+  z-index: 2;
+}
+.footer .content .container {
+  max-width: 768px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  color: #fff;
+}
+
+.content h2 {
+  margin-bottom: .25rem;
+  font-size: 2.25rem;
+}
+
+.content span {
+  font-size: .875rem;
+}
+
+.footer__links  {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+  transition: all 150ms ease-out;
+  justify-content: center;
+}
+
+.footer__links .footer__link {
+  transition: all 150ms ease-out;
+  display: inline-block;
+}
+
+.footer__link:hover:after {
+    width: 100%;
+}
+
+.footer__link:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    background-color: #fff;
+    transition: width .25s ease-out;
+}
+.footer__socials {
+  justify-self: flex-end;
+}
+
+.footer__social {
+  font-size: 1.25rem;
+  margin-right: 1.5rem;
+}
+.footer__social:hover {
+  opacity: 0.8;
+}
+
+.footer__copy {
+  text-align: center;
+  background:rgb(91, 73, 255);
+  font-size: .875rem;
+  text-align: center;
+  color: #dcdcdc;
+  padding: 3rem 0 2rem;
+}
+@-webkit-keyframes bubble-size {
+  0%, 75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+
+@keyframes bubble-size {
+  0%, 75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+@-webkit-keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}
+@keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}
+
+@media screen and (max-width: 767px){
+  .footer .content {
+    padding: 0 1.5rem;
+  }
+  .footer .content .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .content h2 {
+    font-size: 1.5rem;
+  }
+
+  .content span {
+    font-size: .813rem;
+  }
+
+  .footer__links  {
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+  
+  .footer__socials {
+    justify-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 567px){
+  .footer .content .container {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 3.5rem;
+  }
+}
+
+
+
+/* Second Footer */
+/* Code by CodingTuting.Com */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    text-align: justify;
+    padding: 0 2em 2em;
+}
+
+h1 {
+    text-align: center;
+    font-family: roboto;
+    font-weight: 400;
+    font-size: 35px;
+    color: #656565;
+}
+
+.dummy-text {
+    color: #3c3b3b;
+    font-family: lato;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.col-6 {
+    width:50%;
+    display: inline-table;
+}
+
+footer {
+    background-color: #3c3b3b;
+    padding: 3em 4em 2em;
+}
+
+    footer .logo {
+        color:#fff;
+        font-size: 28px;
+        font-family: roboto;
+    }
+
+    footer .row {
+        margin: 2em 0;
+        font-family: lato;
+        color: #fff;
+        position: relative;
+        border-bottom: 1px solid #cecece;
+    }
+    
+    .footer-toggle {
+        display: none;
+    }
+
+    .link-cat {
+        cursor:pointer;
+    }
+    
+    footer ul {
+        padding:0;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;        
+    }
+
+        footer ul li {
+            list-style-type: none;
+            padding:0;            
+            -webkit-transition: all .5s ease-in-out;            
+            transition: all .5s ease-in-out;
+            line-height: 2;            
+        }  
+
+        footer .footer-cat, #newsletter span {
+            font-size: 20px;
+        }
+
+        .footer-cat-links a {
+            /* color: #cecece; */
+            color: white;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .footer-cat-links.active > li a {
+            pointer-events: auto;
+        }
+
+        .footer-cat-links a:after {
+            top: 21px;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            width: 0;
+            background: #fff;
+            
+            -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        }
+
+        .footer-cat-links a:hover:after, .footer-cat-links a:focus:after {
+            width: 100%;
+            left: 0;
+        }
+
+        footer #subscribe {
+            margin: 20px 0px 30px;
+        }
+
+        input#subscriber-email {
+            outline: none;
+            padding: 8px;
+            background: #212121;
+            border: 1px solid #cecece;
+            color: #cecece;
+            border-radius: 4px 0px 0px 4px;
+        }
+
+        input#subscriber-email::-webkit-input-placeholder {
+            color:rgb(202, 196, 196);
+        }
+
+        input#subscriber-email:-ms-input-placeholder {
+            color:#cecece;
+        }
+
+        input#subscriber-email::-ms-input-placeholder {
+            color:#cecece;
+        }
+
+        input#subscriber-email::placeholder {
+            color:#cecece;
+        }
+
+    .col-3 {
+        display: inline-table;
+        width:25%;
+    }
+
+    .col-3#newsletter {
+        width:24%
+    }
+
+    .col-3#newsletter #btn-scribe {
+        margin-left: -4px;
+        border: 1px solid #cecece;
+        border-radius: 0px 4px 4px 0;
+        padding: 8px 5px;
+        background-color: #e2e2e2;
+        color: #212121;
+        cursor: pointer;
+    }
+
+    .social-2 {
+        display: none;
+    }
+
+    .social-links {
+        bottom: 44px;
+        position: absolute;
+        left: 0;
+    }
+    
+        .social-links a {
+            color: #fff;
+            font-size: 20px;
+            border: 1px solid;
+            border-radius: 20px;
+            padding: 6px;
+
+            -webkit-transition:all .2s ease-in;
+            transition:all .2s ease-in;
+        }
+
+        .social-links a:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        .social-links a:hover, .social-links a:focus {
+            background-color: #212121;
+        }
+
+            .social-links a i {
+                width: 25px;
+                height: 25px;
+                text-align:center;
+            }
+
+            #newsletter #address li:not(:first-child) {
+                padding: 20px 0;
+            }
+        
+                #newsletter #address li i {
+                    font-size: 45px;
+                    width: auto;
+                    padding: 5px;
+                }
+
+                    #newsletter #address li div {
+                        color: #cecece;
+                        font-size: 14px;
+                        width: 80%;
+                        text-align: left;
+                        float: right;
+                        line-height: 1.3;
+                    }
+
+    #copyright {
+        text-align: center;
+        color:#fff;
+        font-family: lato;
+    }
+
+#owner {
+    text-align: center;
+    padding: 20px 0 0px;
+    color: #fff;
+    font-family: lato;
+}
+
+    #owner a {
+        color:#fff;        
+    }
+
+/* iPads to Smartphone for Common Elements ----------- */  
+@media only screen and (max-width : 1024px) {    
+
+    .col-3 {
+        display: block;
+        width: 100%;
+        padding-bottom: 1em;
+        position: relative;
+    }
+
+    .col-3#newsletter {
+        width: 100%;
+        position: relative;
+        padding-bottom: 0;
+        padding-top: 1em;
+    }    
+        
+    footer .footer-cat {
+        margin-left: 25px;
+    }
+     
+    .footer-toggle,.footer-toggle::after {
+        background: #fff;
+        height: 2px;
+        width: 15px;
+        position: absolute;
+        display: block;
+        -webkit-transition:all .4s ease-in;
+        transition:all .4s ease-in;
+    }
+
+    .footer-toggle {        
+        top: 11px;
+        cursor:pointer;
+    }
+
+    .footer-toggle::after {
+        content: '';
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    .btnActive .footer-toggle::after {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    .footer-cat-links {
+        margin: 0 0em 0px 1.6em;
+    }
+
+        .footer-cat-links a {
+            pointer-events: none;
+        }
+    
+    .footer-cat-links li {
+        line-height: 0;
+        opacity: 0;
+    }
+
+    .footer-cat-links.active > li{
+        line-height:2;
+        opacity:1;
+    }
+
+    .social-1 {
+        display: none !important;
+    }
+
+    .social-2 {
+        display: block;
+        position: absolute;
+        top: 7.5em;
+        bottom: 0px;
+        height:20px;
+        padding-bottom: 1.5em;
+        width: 100%;
+    }
+
+    #address {
+        margin-top: 6em;
+    }
+
+    #newsletter #address li i {
+        width: auto;
+    }
+
+    #newsletter #address li div {
+        font-size: 14px;
+        width: auto;
+        text-align: -webkit-auto;
+        float: none;
+        line-height: 2;
+        display: inline-block;
+        padding: 10px 0 15px;
+    }
+
+    #newsletter #address li div:last-child {
+        padding-bottom: 0;
+    }
+
+    #newsletter #address li:not(:first-child) {
+        padding: 20px 0 0;
+    }
+}
+
+/* iPads (portrait)----------- */  
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+    
+    footer {
+        padding-right:3em;
+        padding-left:3em;
+    }
+
+    .col-3 {
+        display: block;
+        width: 100%;
+        padding-bottom: 1em;
+    }
+}
+
+/* iPads (landscape) ----------- */  
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {  
+    
+    section {
+        padding-bottom: 3em;
+    }
+
+    .sec-heading {
+        padding:1em 0;
+    }
+    
+    .col-3 {
+        display: block;
+        width: 100%;
+        padding-bottom: 1em;
+    }
+}
+
+/* Mini Tablet ----------- */  
+@media only screen and (max-width : 600px) {  
+    
+    .col-3 {
+        display: block;
+        width: 100%;
+        padding-bottom: 1em;
+    }
+
+    .col-6 {
+        width: 100%;
+        display: block;
+    }
+    
+    footer {
+        padding: 3em 2em 2em;
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */  
+@media only screen and (max-width : 480px) {  
+
+    .col-6 {
+        width: 100%;
+        display: block;
+    }
+    
+    footer {
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+}

@@ -1,0 +1,408 @@
+@model MyWebApp.Models.User;
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato|Nanum+Gothic:700|Raleway&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+  @* <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  *@
+
+
+  @* ***************************** How to add External style sheet file ************************************* *@
+
+  @* <link href="@Url.Content("/wwwroot/index.css")" rel="stylesheet" /> *@
+
+  <link href="~/wwwroot/index.css" rel="stylesheet" media="all">
+
+
+
+  <style>
+    /***************************************** Naviagtion CSS ******************************************************/
+
+    /* First make all margin and padding 0 */
+    * {
+      margin: 0px;
+      padding: 0px;
+
+    }
+
+    /* Second work on image*/
+    header img {
+      display: block;
+      /* height: 84px; */
+      cursor: pointer;
+      margin-right: auto;
+    }
+
+    /* Changes the styling of links if necessary */
+    li,
+    a,
+    button {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 800;
+      font-size: 16px;
+      /* color: whitesmoke; */
+      text-decoration: none;
+      color: white;
+    }
+
+    /* Now start positioning the links and images 
+    according to your convinence */
+    header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 30px 10%;
+      background-color: rgb(19, 6, 6);
+    }
+
+    .navigate_links {
+      list-style: none;
+    }
+
+    .navigate_links li {
+      display: inline-block;
+      padding: 10px 20px;
+    }
+
+    .navigate_links li a {
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    /* Add some transition to make navigation 
+    bar attractive */
+    .navigate_links li a:hover {
+      color: greenyellow;
+      border: 2px solid blue;
+      box-shadow: 3px 3px 3px red, 3px 3px 3px blue;
+      border-radius: 8px;
+      margin: 10px;
+      padding: 12px;
+    }
+
+    button {
+      margin-left: 20px;
+      padding: 9px 15px;
+      border-radius: 15px;
+      background-color: rgb(89, 61, 248);
+      color: rgb(243, 236, 236);
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out 0s;
+      font-weight: bold;
+    }
+
+    button:hover {
+      /* background-color: rgb(219, 221, 81); */
+      /* background-color: #D63484; */
+      background-color: rgb(169, 156, 244);
+      color: black;
+      font-weight: bolder;
+    }
+
+    /**************************************** Form CSS ******************************************************/
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      font-family: Open Sans;
+    }
+
+    body {
+      background: hsl(86, 85%, 95%);
+    }
+
+    /* Heading Title Animation  */
+    h1 {
+      align-items: center;
+      text-align: center;
+    }
+
+
+    /*-------------------- Buttons    --------------------*/
+    .btn {
+      display: block;
+      background: hsl(86, 76%, 71%);
+      color: hsl(0, 0, 100);
+      text-decoration: none;
+      margin: 20px 0;
+      padding: 15px 15px;
+      border-radius: 5px;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all .2s ease-in-out;
+        box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0), 0 3px 3px hsla(0, 0, 0, .2);
+        border-radius: 5px;
+      }
+
+      &:hover::after {
+        background: hsla(0, 0, 0, 0.1);
+        box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0.2);
+      }
+
+    }
+
+    .btn-social {
+      padding-left: 64px;
+      position: relative;
+      z-index: 1;
+
+      .fa {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 50px;
+        height: 100%;
+        text-align: center;
+        background: hsla(0, 0, 0, 0.1);
+        line-height: 3.2;
+        border-radius: 5px 0 0 5px;
+      }
+
+    }
+
+    .btn-facebook {
+      background-color: hsl(221, 44%, 41%);
+    }
+
+    .btn-twitter {
+      background-color: hsl(206, 82%, 63%);
+    }
+
+    .btn-google {
+      background-color: hsl(7, 71%, 55%);
+    }
+
+    .btn-linkedin {
+      background-color: hsl(196, 100%, 43%);
+    }
+
+
+    /*--------------------
+Form
+--------------------*/
+    .form {
+
+      fieldset {
+        border: none;
+        padding: 0;
+        margin: 20px 0;
+        position: relative;
+
+        input {
+          width: 100%;
+          height: 48px;
+          color: hsl(0, 0, 20);
+          padding: 15px 40px 15px 15px;
+          border-radius: 5px;
+          font-size: 14px;
+          outline: none !important;
+          border: 1px solid hsla(0, 0, 0, 0.3);
+          box-shadow: inset 0 1px 4px hsla(0, 0, 0, 0.2);
+          vertical-align: top;
+        }
+
+      }
+
+      button {
+        width: 100%;
+        outline: none !important;
+        background: linear-gradient(-5deg, hsl(86, 61%, 44%), hsl(86, 65%, 54%));
+        border: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        box-shadow: 0 3px 0px hsla(86, 21%, 44%, 0.2);
+        text-shadow: 0 2px 3px hsla(0, 0, 0, 0.2);
+      }
+
+    }
+
+
+
+    /*--------------------
+Signup
+--------------------*/
+    .signup {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      width: 800px;
+      background: hsl(0, 0, 100);
+      border-radius: 10px;
+      box-shadow: 0 3px 25px hsla(0, 0, 0, 0.2);
+      overflow: hidden;
+      display: flex;
+      margin-top: 5rem;
+    }
+
+    .signup-connect,
+    .signup-classic {
+      width: 50%;
+      padding: 30px 50px;
+    }
+
+    .signup-connect {
+      background: linear-gradient(134deg, hsl(44, 96%, 65%), hsl(34, 95%, 45%));
+      color: hsl(0, 0, 100);
+
+      h1 {
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        text-shadow: 0 2px 3px hsla(0, 0, 0, 0.1);
+      }
+
+    }
+
+    .signup-classic {
+
+      h2 {
+        font-size: 16px;
+        font-weight: normal;
+        margin-top: 23px;
+        margin-bottom: 43px;
+        text-shadow: 0 2px 3px hsla(0, 0, 0, 0.1);
+      }
+
+      fieldset::after {
+        content: '\f007';
+        font-family: FontAwesome;
+        position: absolute;
+        right: 15px;
+        top: 17px;
+        z-index: 2;
+        width: 20px;
+        color: hsla(0, 0, 0, .2);
+        text-align: center;
+      }
+
+      fieldset.email::after {
+        content: '\f0e0';
+      }
+
+      fieldset.password::after {
+        content: '\f023';
+      }
+
+    }
+
+    /* **************************** Footer CSS ************************************************************/
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="~/images/site_logo.png" alt="Site Logo" srcset="" />
+    <nav>
+      <ul class="navigate_links">
+        <li><a href="@Url.Content("~/index.html")">Home</a></li>
+        <li><a href="@Url.Content("~/about.html")">About</a></li>
+        <li><a href="@Url.Content("~/blog.html")">Blog</a></li>
+        <li><a href="@Url.Content("http://localhost:5109/Home/FeedbackForm")">Feedback</a></li>
+      </ul>
+    </nav>
+    <a class="signin" href="http://localhost:5109/Home/UserLogin">
+      <button>User Login</button>
+    </a>
+
+    <a class="signin" href="http://localhost:5109/Home/UserRegistration">
+      <button>User Registration</button>
+    </a>
+
+
+    <a class="signin" href="http://localhost:5109/Home/AdminLogin">
+      <button> Admin Login </button>
+    </a>
+
+  </header>
+
+
+  <h1>Welcome User</h1>
+
+  <div class="signup">
+    <div class="signup-connect">
+      <h1>Create your account</h1>
+      <a href="#" class="btn btn-social btn-facebook"><i class="fa fa-facebook"></i> Sign in with Facebook</a>
+      <a href="#" class="btn btn-social btn-twitter"><i class="fa fa-twitter"></i> Sign in with Twitter</a>
+      <a href="#" class="btn btn-social btn-google"><i class="fa fa-google"></i> Sign in with Google</a>
+      <a href="#" class="btn btn-social btn-linkedin"><i class="fa fa-linkedin"></i> Sign in with Linkedin</a>
+    </div>
+    <div class="signup-classic">
+      <h2>Or use the classical way</h2>
+      <form class="form">
+        <fieldset class="username">
+          <input type="text" placeholder="username" @Html.TextBoxFor(entry => entry.Name) </fieldset>
+          <fieldset class="email">
+            <input type="email" placeholder="email" @Html.TextBoxFor(entry => entry.Email, new { type = "email" })
+              </fieldset>
+            <fieldset class="userid">
+              <input type="number" placeholder="User ID" @Html.TextBoxFor(entry => entry.Username) </fieldset>
+              <fieldset class="password">
+                <input type="password" placeholder="password" @Html.PasswordFor(entry => entry.Password) </fieldset>
+                <button type="submit" class="btn " value="Sign Up">sign up</button>
+
+      </form>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+<!----------------------------------------- Origional Code ----------------------------------- >
+
+@* 
+<form method="post">
+    <p>
+        <b>Name</b><br />
+        @Html.TextBoxFor(entry => entry.Name)
+    </p>
+    <p>
+        <b>Email</b><br />
+        @Html.TextBoxFor(entry => entry.Email, new { type = "email" })
+    </p>
+
+    <p>
+        <b>User ID</b><br />
+        @Html.TextBoxFor(entry => entry.Username)
+    </p>
+    <p>
+        <b>Password</b><br />
+        @Html.PasswordFor(entry => entry.Password)
+    </p>
+    <p>
+        <input type="submit" value="Sign Up" />
+    </p>
+</form>
+ *@

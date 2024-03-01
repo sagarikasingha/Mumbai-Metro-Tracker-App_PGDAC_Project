@@ -1,0 +1,357 @@
+<!----------------------------------- View stations Code ----------------------------------- ----->
+@model MyWebApp.Models.Station
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mumbai Metro Route Locator</title>
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Nanum+Gothic:700|Raleway&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet" />
+
+    <!------------------------------------- Table CSS -------------------------------------->
+    <style>
+        .form-group input[type="text"] {
+            width: 50%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #EE4266;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-group button[type="submit"]:hover {
+            background-color: #EE4266;
+        }
+
+        .submit {
+            align-items: center;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button.submit {
+            background-color: #EE4266;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button.submit:hover {
+            background-color: #EE4266;
+        }
+
+        .form-group label,
+        .form-group input[type="text"],
+        button.submit {
+            align-self: center;
+       }
+       button{
+            background-color: #EE4266;
+       }
+    </style>
+
+
+</head>
+
+<body>
+    <!------------ Naviagation Bar ------------------------------------------------------------->
+
+    <header>
+        <img src="~/images/site_logo.png" alt="Site Logo" srcset="" />
+        <nav>
+            <ul class="navigate_links">
+                <li><a href="@Url.Content("~/index.html")">Home</a></li>
+                <li><a href="@Url.Content("~/about.html")">About</a></li>
+                <li><a href="@Url.Content("~/blog.html")">Blog</a></li>
+               <li><a href="@Url.Content("http://localhost:5109/Home/FeedbackForm")">Feedback</a></li>
+            </ul>
+        </nav>
+        <a class="signin" href="http://localhost:5109/Home/UserLogin">
+            <button>User Login</button>
+        </a>
+
+        <a class="signin" href="http://localhost:5109/Home/UserRegistration">
+            <button>User Registration</button>
+        </a>
+
+        <a class="signin" href="http://localhost:5109/Home/AdminLogin">
+            <button>Admin Login</button>
+        </a>
+    </header>
+
+    <!-------------------------------- Form ------------------------------------------------------------->
+
+    <form asp-action="AddStation">
+        <div class="form-group">
+            <label for="StationId">Station ID:</label>
+            <input type="text" id="StationId" name="StationId" asp-for="StationId" required />
+        </div>
+        <div class="form-group">
+            <label for="StationName">Station Name:</label>
+            <input type="text" id="StationName" name="StationName" asp-for="StationName" required />
+        </div>
+        <div class="form-group">
+            <label for="RouteId">Route ID:</label>
+            <input type="text" id="RouteId" name="RouteId" asp-for="RouteId" required />
+        </div>
+        <div class="form-group">
+            <label for="PreviousStationId">Previous Station ID:</label>
+            <input type="text" id="PreviousStationId" name="PreviousStationId" asp-for="PreviousStationId" />
+        </div>
+        
+        <div class="form-group">
+            <label for="NextStationId">Next Station ID:</label>
+            <input type="text" id="NextStationId" name="NextStationId" asp-for="NextStationId" />
+            <button type="submit" class="submit">Add Station</button>
+        </div>
+    </form>
+
+        
+
+    <!----------------------------------------  Footer------------------------------------------------------------>
+
+    <footer style="background-color: #EE4266; margin-top:2rem">
+        <div>
+            <span class="logo">Metro Router</span>
+        </div>
+
+        <div class="row">
+            <div class="col-3">
+                <div class="link-cat" onclick="footerToggle(this)">
+                    <span class="footer-toggle"></span>
+                    <span class="footer-cat">Solution</span>
+                </div>
+                <ul class="footer-cat-links">
+                    <li>
+                        <a href=""><span>Interprise App Development</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>Android App Development</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>ios App Development</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <div class="link-cat" onclick="footerToggle(this)">
+                    <span class="footer-toggle"></span>
+                    <span class="footer-cat">Industries</span>
+                </div>
+                <ul class="footer-cat-links">
+                    <li>
+                        <a href=""><span>Healthcare</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>Sports</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>ECommerce</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>Construction</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>Club</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <div class="link-cat" onclick="footerToggle(this)">
+                    <span class="footer-toggle"></span>
+                    <span class="footer-cat">Quick Links</span>
+                </div>
+                <ul class="footer-cat-links">
+                    <li>
+                        <a href=""><span>Reviews</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>Terms & Condition</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>Disclaimer</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>Site Map</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3" id="newsletter">
+                <span>Stay Connected</span>
+                <form id="subscribe">
+                    <input type="email" id="subscriber-email" placeholder="Enter Email Address" />
+                    <input type="submit" value="Subscribe" id="btn-scribe" />
+                </form>
+
+                <div class="social-links social-2">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-tumblr"></i></a>
+                    <a href=""><i class="fab fa-reddit-alien"></i></a>
+                </div>
+
+                <div id="address">
+                    <span>Office Location</span>
+                    <ul>
+                        <li>
+                            <i class="far fa-building"></i>
+                            <div>
+                                Los Angeles<br />
+                                Office 9B, Sky High Tower, New A Ring Road, Los Angeles
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-gopuram"></i>
+                            <div>
+                                Delhi<br />
+                                Office 150B, Behind Sana Gate Char Bhuja Tower, Station Road,
+                                Delhi
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-links social-1 col-6">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-tumblr"></i></a>
+                <a href=""><i class="fab fa-reddit-alien"></i></a>
+            </div>
+        </div>
+        <div id="copyright">&copy; All Rights Reserved</div>
+        <div id="owner">
+            <span>
+                Designed by <a href="https://www.codingtuting.com">.Com</a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="StyleiTechFooter.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+<!------------------------------------------------------ Origional Code ---------------------------------------------->
+
+
+@* 
+@model MyWebApp.Models.Station 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Station</title>
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input[type="text"] {
+            width: 50%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-group button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+   
+
+    </style>
+</head>
+<body>
+
+<h2>Add Station</h2>
+
+<form asp-action="AddStation">
+    <div class="form-group">
+        <label for="StationId">Station ID:</label>
+        <input type="text" id="StationId" name="StationId" asp-for="StationId" required />
+    </div>
+    <div class="form-group">
+        <label for="StationName">Station Name:</label>
+        <input type="text" id="StationName" name="StationName" asp-for="StationName" required />
+    </div>
+    <div class="form-group">
+        <label for="RouteId">Route ID:</label>
+        <input type="text" id="RouteId" name="RouteId" asp-for="RouteId" required />
+    </div>
+    <div class="form-group">
+        <label for="PreviousStationId">Previous Station ID:</label>
+        <input type="text" id="PreviousStationId" name="PreviousStationId" asp-for="PreviousStationId" />
+    </div>
+    <div class="form-group">
+        <label for="NextStationId">Next Station ID:</label>
+        <input type="text" id="NextStationId" name="NextStationId" asp-for="NextStationId" />
+            <button type="submit" class="submit">Add Station</button>
+    </div>
+    
+</form>
+
+</body>
+</html>
+*@

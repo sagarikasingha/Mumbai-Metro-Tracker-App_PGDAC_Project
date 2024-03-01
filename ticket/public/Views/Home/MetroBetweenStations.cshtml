@@ -1,0 +1,77 @@
+@* @model List<MyWebApp.Models.Station>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Journey Planner</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Stations Between Source and Destination</h2>
+        <div class="row">
+            <div class="col">
+                <h4>Source Station: @ViewBag.sourceStationId</h4>
+            </div>
+            <div class="col">
+                <h4>Destination Station: @ViewBag.destinationStationId</h4>
+            </div>
+        </div>
+        <hr />
+        @if (Model != null && Model.Any())
+        {
+            <ul>
+                @foreach (var station in Model)
+                {
+                    <li>@station.StationName</li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p>No stations found between the selected source and destination.</p>
+        }
+    </div>
+</body>
+</html> *@
+@model List<MyWebApp.Models.Station>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Journey Planner</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Stations Between Source and Destination</h2>
+        <div class="row">
+            <div class="col">
+                <h4>Source Station: @ViewBag.sourceStationId</h4>
+            </div>
+            <div class="col">
+                <h4>Destination Station: @ViewBag.destinationStationId</h4>
+            </div>
+            <div class="col">
+                <h4>Fare: @ViewData["Fare"]</h4>
+            </div>
+        </div>
+        <hr />
+        @if (Model != null && Model.Any())
+        {
+            <ul>
+                @foreach (var station in Model)
+                {
+                    <li>@station.StationName</li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p>No stations found between the selected source and destination.</p>
+        }
+    </div>
+</body>
+</html>

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mumbai Metro Route Locator</title>
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+
+    <!-- Bootstrap CSS  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Nanum+Gothic:700|Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img src="./images/site_logo.png" alt="not found" srcset="" />
+      <nav>
+        <ul class="navigate_links">
+          <li><a href="#">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="http://localhost:5109/Home/FeedbackForm">Feedback</a></li>
+        </ul>
+      </nav>
+      <a class="signin" href="http://localhost:5109/Home/UserLogin">
+        <button>User Login</button>
+      </a>
+
+      <a class="signin" href="http://localhost:5109/Home/UserRegistration">
+        <button>User Registration</button>
+      </a>
+
+      <a class="signin" href="http://localhost:5109/Home/AdminLogin">
+        <button>Admin Login</button>
+      </a>
+    </header>
+
+    <!--------------------------------------  Travlling train Animation ------------------------------------------->
+    <!-- <div class="bg-primary">
+        <video src="./images/Reelvideo-66463.mp4"></video>
+         </div> -->
+
+    <!-- <video width="1600" height="240" controls autoplay>
+  <source src="./images/Reelvideo-66463.mp4" type="video/mp4">
+</video> -->
+    <div></div>
+
+    <!------------------------------------------- Sliding Div Of images --------------------------------------------->
+    <div class="cards_div">
+      <div class="carousel">
+        <ul class="slides">
+          <input type="radio" name="radio-buttons" id="img-1" checked />
+          <li class="slide-container">
+            <div class="slide-image">
+              <img src="./images/Designer (1).jpeg" />
+            </div>
+            <div class="carousel-controls">
+              <label for="img-3" class="prev-slide">
+                <span>&lsaquo;</span>
+              </label>
+              <label for="img-2" class="next-slide">
+                <span>&rsaquo;</span>
+              </label>
+            </div>
+          </li>
+          <input type="radio" name="radio-buttons" id="img-2" />
+          <li class="slide-container">
+            <div class="slide-image">
+              <img src="./images/Designer (7).jpeg" />
+            </div>
+            <div class="carousel-controls">
+              <label for="img-1" class="prev-slide">
+                <span>&lsaquo;</span>
+              </label>
+              <label for="img-3" class="next-slide">
+                <span>&rsaquo;</span>
+              </label>
+            </div>
+          </li>
+          <input type="radio" name="radio-buttons" id="img-3" />
+          <li class="slide-container">
+            <div class="slide-image">
+              <img src="./images/Designer (10).jpeg" />
+            </div>
+            <div class="carousel-controls">
+              <label for="img-2" class="prev-slide">
+                <span>&lsaquo;</span>
+              </label>
+              <label for="img-1" class="next-slide">
+                <span>&rsaquo;</span>
+              </label>
+            </div>
+          </li>
+          <div class="carousel-dots">
+            <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+            <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+            <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <!----------------------------------------------- Cards with Data ----------------------------------------------------------->
+    <!--creating a class container which will hold
+         card class and again card will hold imgbox class-->
+
+    <div class="flex-container">
+      <div class="container">
+        <div class="card">
+          <div class="imgbox">
+            <!--extracting image named gfg.jpg from images folder-->
+            <img src="./images/WhatsApp Image 2024-02-23 at 12.39.28 PM.jpeg" />
+          </div>
+          <div class="content">
+            <!--heading of the card-->
+            <h1>Better Transport</h1>
+
+            <!--content of the card-->
+            <p>
+              Mumbai Metro is a fantastic option for many journeys, offering a
+              comfort and a stress-free travel experience.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <div class="imgbox">
+            <!--extracting image named gfg.jpg from images folder-->
+            <img
+              src="./images/272137941_450846860018410_7040109140022906993_n.webp"
+            />
+          </div>
+          <div class="content">
+            <!--heading of the card-->
+            <h1>Better Mode</h1>
+
+            <!--content of the card-->
+            <p>
+              It's transforming the way people travel in the city, offering a
+              comfortable, and reliable alternative.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <div class="imgbox">
+            <!--extracting image named gfg.jpg from images folder-->
+            <img
+              src="./images/272322961_3101586466745273_7015655484062579515_n.webp"
+            />
+          </div>
+          <div class="content">
+            <!--heading of the card-->
+            <h1>Speed</h1>
+
+            <!--content of the card-->
+            <p>
+              Mumbai Metro is a fantastic option for many journeys, offering a
+              comfort and a stress-free travel experience.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <div class="imgbox">
+            <!--extracting image named gfg.jpg from images folder-->
+            <img
+              src="./images/shutterstock-403396726-cropped-1578895273-1603085603 - Copy.jpg"
+            />
+          </div>
+          <div class="content">
+            <!--heading of the card-->
+            <h1>Pink Line</h1>
+
+            <!--content of the card-->
+            <p>
+              The 14.477 km (8.996 mi) elevated line will connect Lokhandwala
+              Complex with Vikhroli and will have 13 stations.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div></div>
+      <div>3</div>
+      <div>4</div> -->
+    </div>
+
+    <!---------------------------------------- Content/Data Section ------------------------------------------------------------>
+    <section>
+      <h1>History of Mumbai Metro</h1>
+      <div class="dummy-text">
+        <p>
+          The Government of Maharashtra through the MMRDA, in order to improve
+          the traffic and transportation scenario in Mumbai and to cater to the
+          future travel needs in the next 2-3 decades began exploring the
+          viability of various alternative mass transit systems which are
+          efficient, economically viable and environment friendly. In this
+          context, a detailed feasibility study was carried out under
+          Indo-German technical co-operation by entrusting the consultancy work
+          to Tewet in association with DE-Consult GmbH and Tata Consultancy
+          Services, during 1997–2000. The study recommended a mass transit
+          corridor from Andheri to Ghatkopar as potentially bankable and
+          economically viable, after examining a number of alternative corridors
+          and alignments. This study was updated by the MMRDA in May 2004.
+          Meanwhile, the Delhi Metro Rail Corporation (DMRC) prepared the master
+          plan for Mumbai Metro, wherein they recommended extending the
+          Andheri-Ghatkopar section to Versova as part of the master plan and
+          identified it as a priority corridor for implementation. The State
+          Government declared the project as a "public vital infrastructure
+          project" and designated the MMRDA as the Project Implementation Agency
+          (PIA).The Versova-Andheri-Ghatkopar corridor was chosen as the first
+          line in the master plan to be implemented.
+          <br /><br />
+          The Mumbai Suburban Railway connects Mumbai from north to south.
+          However, east–west connectivity is poor. The Versova-Ghatkopar route
+          had no suburban rail link and was serviced by either BEST buses, autos
+          or taxis.Line 1 provides east–west rail connectivity between the
+          Eastern and Western suburbs of Mumbai.It facilitates interchange
+          between the Mumbai Suburban Railway and Mumbai Metro at Andheri and
+          Ghatkopar stations. The line significantly reduces the journey time
+          from Versova to Ghatkopar from 90–120 minutes to 21 minutes, and
+          bypasses about 45 traffic signals.It also provides rail connectivity
+          to the MIDC and SEEPZ.
+        </p>
+      </div>
+    </section>
+
+    <!----------------------------------- Sliding Images Rows of Images -------------------------------------------->
+
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide">
+          <img
+            src="./images/Designer (3).jpeg"
+            alt=""
+            height="250"
+            width="250"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/Designer (9).jpeg"
+            alt=""
+            height="250"
+            width="250"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/Designer (13).jpeg"
+            alt=""
+            height="250"
+            width="250"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/Designer (11).jpeg"
+            alt=""
+            height="250"
+            width="250"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/fotor-ai-202402241320.jpg"
+            alt=""
+            height="250"
+            width="250"
+          />
+        </div>
+        <div class="slide">
+          <img src="./images/Designer.jpeg" alt="" height="250" width="250" />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/fotor-ai-2024022413139.jpg"
+            alt=""
+            height="250"
+            width="250"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/Designer (3).jpeg"
+            alt=""
+            height="250"
+            width="250"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/Designer (14).jpeg"
+            alt=""
+            height="250"
+            width="250"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/Designer (8).jpeg"
+            alt=""
+            height="250"
+            width="250"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/Designer (6).jpeg"
+            alt=""
+            height="250"
+            width="250"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/Designer (2).jpeg"
+            alt=""
+            height="250"
+            width="250"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/Designer (5).jpeg"
+            alt=""
+            height="250"
+            width="250"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/Designer (12).jpeg"
+            alt=""
+            height="250"
+            width="250"
+          />
+        </div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+      </div>
+    </div>
+
+    <!----------------------------------------  Footer------------------------------------------------------------>
+
+    <footer>
+      <div>
+        <span class="logo">Metro Router</span>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <div class="link-cat" onclick="footerToggle(this)">
+            <span class="footer-toggle"></span>
+            <span class="footer-cat">Solution</span>
+          </div>
+          <ul class="footer-cat-links">
+            <li>
+              <a href=""><span>Interprise App Development</span></a>
+            </li>
+            <li>
+              <a href=""><span>Android App Development</span></a>
+            </li>
+            <li>
+              <a href=""><span>ios App Development</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <div class="link-cat" onclick="footerToggle(this)">
+            <span class="footer-toggle"></span>
+            <span class="footer-cat">Industries</span>
+          </div>
+          <ul class="footer-cat-links">
+            <li>
+              <a href=""><span>Healthcare</span></a>
+            </li>
+            <li>
+              <a href=""><span>Sports</span></a>
+            </li>
+            <li>
+              <a href=""><span>ECommerce</span></a>
+            </li>
+            <li>
+              <a href=""><span>Construction</span></a>
+            </li>
+            <li>
+              <a href=""><span>Club</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <div class="link-cat" onclick="footerToggle(this)">
+            <span class="footer-toggle"></span>
+            <span class="footer-cat">Quick Links</span>
+          </div>
+          <ul class="footer-cat-links">
+            <li>
+              <a href=""><span>Reviews</span></a>
+            </li>
+            <li>
+              <a href=""><span>Terms & Condition</span></a>
+            </li>
+            <li>
+              <a href=""><span>Disclaimer</span></a>
+            </li>
+            <li>
+              <a href=""><span>Site Map</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3" id="newsletter">
+          <span>Stay Connected</span>
+          <form id="subscribe">
+            <input
+              type="email"
+              id="subscriber-email"
+              placeholder="Enter Email Address"
+            />
+            <input type="submit" value="Subscribe" id="btn-scribe" />
+          </form>
+
+          <div class="social-links social-2">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-tumblr"></i></a>
+            <a href=""><i class="fab fa-reddit-alien"></i></a>
+          </div>
+
+          <div id="address">
+            <span>Office Location</span>
+            <ul>
+              <li>
+                <i class="far fa-building"></i>
+                <div>
+                  Los Angeles<br />
+                  Office 9B, Sky High Tower, New A Ring Road, Los Angeles
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-gopuram"></i>
+                <div>
+                  Delhi<br />
+                  Office 150B, Behind Sana Gate Char Bhuja Tower, Station Road,
+                  Delhi
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="social-links social-1 col-6">
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-linkedin-in"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-tumblr"></i></a>
+          <a href=""><i class="fab fa-reddit-alien"></i></a>
+        </div>
+      </div>
+      <div id="copyright">&copy; All Rights Reserved @</div>
+      <div id="owner">
+        <span>
+          Designed by <a href="https://www.codingtuting.com">.Com</a>
+        </span>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="StyleiTechFooter.js"></script>
+  </body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mumbai Metro Route Locator</title>
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    ### Bootstrap CSS 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+     #### Nav Bar 
+    <nav class="menu menu-1">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.7ng8jCJZOZ8YC5Pfq4y1fgHaE8&pid=Api&P=0&h=180" alt="" srcset="">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">contact</a></li>
+        <li class="dropbtn"><a href="#">Signup</a></li>
+       
+        ### Drop Down 
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn"><a href="#">Login</a></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#home">Admin Login</a>
+            <a href="#home">User Login</a>
+          </div>
+        </div>
+      </ul>
+    </nav>
+
+     ################################## 
+    <h1 class="text-danger">Mumabi Metro</h1>
+
+    <h3>Login</h3>
+    <br />
+    <a href="http://localhost:5109/Home/UserLogin">User Login</a><br />
+    <h3>Signup</h3>
+    <br />
+    <a href="http://localhost:5109/Home/UserRegistration">User Registration</a
+    ><br />
+    <h3>Admin Login</h3>
+    <br />
+    <button class="">
+      <a href="http://localhost:5109/Home/AdminLogin">Admin Login</a>
+    </button>
+    <br />
+
+    <script src="./index.js"></script>
+
+    
+  </body>
+
+
+
+   style="background-image:url('https://tse4.mm.bing.net/th?id=OIP.yn0_eWcibsxMr4_KnaOLCQHaEo&pid=Api&P=0&h=180');"> 
+           
+</html> -->

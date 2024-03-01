@@ -1,0 +1,630 @@
+@model IEnumerable<MyWebApp.Models.Station>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/index.css" rel="stylesheet">
+   
+    <link rel="stylesheet" href="./index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Nanum+Gothic:700|Raleway&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet" />
+  
+
+@* 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> *@
+
+ <style>
+     *{
+        margin: 0px;
+        padding: 0px;
+     }
+        .div_img {
+            width: 100%;
+        }
+
+        .login {
+            height: 1000px;
+            width: 100%;
+            background: radial-gradient(#653d84, #332042);
+            position: relative;
+        }
+
+        .login_box {
+            width: 1050px;
+            height: 600px;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 1px 4px 22px -8px #0004;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .login_box .left {
+            width: 41%;
+            height: 100%;
+            padding: 25px 25px;
+
+        }
+
+        .login_box .right {
+            width: 59%;
+            height: 100%
+        }
+
+        .left .top_link a {
+            color: #452A5A;
+            font-weight: 400;
+        }
+
+        .left .top_link {
+            height: 20px
+        }
+
+        .left .contact {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+            height: 100%;
+            width: 73%;
+            @* margin: auto; *@
+        }
+
+        .left h3 {
+            text-align: center;
+            @* margin-bottom: 40px; *@
+        }
+
+        .left input {
+            border: none;
+            width: 80%;
+            @* margin: 15px 0px; *@
+            border-bottom: 1px solid #4f30677d;
+            padding: 7px 9px;
+            width: 100%;
+            overflow: hidden;
+            background: transparent;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .left {
+            background: linear-gradient(-45deg, #dcd7e0, #fff);
+        }
+
+        .source{
+           @* margin-top: -8rem; *@
+        }
+        .destination{
+            margin-top: 5rem; 
+        }
+        .form-control{
+          
+            max-width: 13em;
+  position: relative;
+  width: 100%;
+   background: #452A5A;
+  font-size: 18px;
+  width: 100%;
+  border: none;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7em 0.5em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  margin-top: -10rem;
+        }
+
+         .form-control2{
+          
+            max-width: 13em;
+  position: relative;
+  width: 100%;
+   background: #452A5A;
+  font-size: 18px;
+  width: 100%;
+  border: none;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7em 0.5em;
+  border-radius: 0.5em;
+  cursor: pointer;
+   margin-top: 5rem;
+        }
+
+.btn{
+    
+     margin-top: 1rem;
+    } 
+
+.btn{
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+@@media (min-width: 768px) {
+  .btn{
+    padding: 0 2.6rem;
+  }
+}
+
+    /************************************** Source to destination css ***************************** */
+
+.stations_outer_div{
+       @* background: #452A5A; *@
+        background: radial-gradient(#653d84, #332042);
+      
+}
+.stations_outer_div > h1{
+   text-align: center;
+   color: white;
+}
+.stations{
+    @* background-color: #65B741; *@
+      background: radial-gradient(#653d84, #332042);
+    width: 50%;
+     width:500px;
+    border-radius: 25px;
+     border: 2px solid white;
+  display: flex;
+  justify-content: center;
+   width: 500px;
+  height: 250px;
+  @* margin: 50px; *@
+  outline: solid 1px black;
+  display: flex;
+  font-weight: bolder;
+  font-style: italic;
+margin: 3rem 0rem 0rem 30rem;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+
+
+
+        .submit {
+            border: none;
+            padding: 15px 70px;
+            border-radius: 8px;
+            display: block;
+            margin: auto;
+            @* margin-top: 120px; *@
+            background: #583672;
+            color: #fff;
+            font-weight: bold;
+            -webkit-box-shadow: 0px 9px 15px -11px rgba(88, 54, 114, 1);
+            -moz-box-shadow: 0px 9px 15px -11px rgba(88, 54, 114, 1);
+            box-shadow: 0px 9px 15px -11px rgba(88, 54, 114, 1);
+        }
+
+
+
+        .right {
+            background: linear-gradient(212.38deg, rgba(242, 57, 127, 0.7) 0%, rgba(175, 70, 189, 0.71) 100%) ,url("~/images/Designer (19).jpeg");
+            color: #fff;
+            position: relative;
+        }
+
+        .right .right-text {
+            height: 100%;
+            @* position: relative; *@
+            transform: translate(0%, 45%);
+            color: black;
+            
+        }
+
+        .right-text h2 {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 50px;
+            font-weight: 500;
+        }
+
+        .right-text h5 {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 19px;
+            font-weight: 400;
+        }
+
+        .right .right-inductor {
+            @* position: absolute; *@
+            width: 70px;
+            height: 7px;
+            background: #fff0;
+            left: 50%;
+            bottom: 70px;
+            transform: translate(-50%, 0%);
+        }
+
+        .top_link img {
+            width: 28px;
+            padding-right: 7px;
+            @* margin-top: -3px; *@
+        }
+
+        li{
+          color: black;
+          text-align: center;
+          margin-top: 0.5rem;
+        }
+ </style>
+
+
+</head>
+
+
+
+<body>
+   
+    <!-------------------------------- Nav bar--------------------------------------->
+    <header>
+        <img src="~/images/site_logo.png" alt="Site Logo" srcset="" />
+        <nav>
+            <ul class="navigate_links">
+        <li><a href="@Url.Content("~/index.html")">Home</a></li>
+        <li><a href="@Url.Content("~/about.html")">About</a></li>
+        <li><a href="@Url.Content("~/blog.html")">Blog</a></li>
+       <li><a href="@Url.Content("http://localhost:5109/Home/FeedbackForm")">Feedback</a></li>
+      </ul>
+        </nav>
+        <a class="signin" href="http://localhost:5109/Home/UserLogin">
+            <button style="background-color: #65B741;">User Login</button>
+        </a>
+
+        <a class="signin" href="http://localhost:5109/Home/UserRegistration">
+            <button style="background-color: #65B741;">User Registration</button>
+        </a>
+
+        <a class="signin" href="http://localhost:5109/Home/AdminLogin">
+            <button style="background-color: #65B741;">Admin Login</button>
+        </a>
+    </header>
+ 
+  <!----------------------------- Input taking Form ------------------------------------->
+
+   
+        <section class="login">
+            <div class="login_box">
+                <div class="left">
+                    <div class="top_link">
+                        <a href="#">
+                           
+                                </a> <h1>Journey Planner</h1> 
+                                </div>
+                    <div class="contact">
+                        <form action="">
+                        
+@{
+    ViewBag.Title = "JourneyPlanner";
+}
+
+@using (Html.BeginForm("MetroBetweenStations", "Home", FormMethod.Post))
+
+{
+    @* Source Stations*@
+        @* @Html.Label("Source Station:") *@
+
+        @* <h3 class="source">Source Station</h3> *@
+        @if (ViewBag.sourceStationId != null)
+        {
+            @Html.DropDownList("sourceStationId", ViewBag.sourceStationId as SelectList, "Select Source Station", new 
+
+                {
+                    @class =
+                    "form-control"
+
+                })
+        }
+    
+
+       @* Destination Stations*@
+        
+       @* @Html.Label("Destination Station:") *@
+
+         @* <h3 class="destination">Destination Station</h3> *@
+        @if (ViewBag.destinationStationId != null)
+
+        {
+            @Html.DropDownList("destinationStationId", ViewBag.destinationStationId as SelectList, "Select Destination Station",
+                    new { @class = "form-control2" })
+        }
+  
+    
+    <button type="submit" class="btn btn-primary">Plan Journey</button>
+     @* <button type="submit" class="btn btn-primary"><a href="http://localhost:5109/Home/MetroBetweenStations" target="_blank" rel="noopener noreferrer"></a>Stations</button> *@
+}
+
+
+                           
+                            @* <input type="text" placeholder="USERNAME">
+                            <input type="text" placeholder="PASSWORD">
+                            <button class="submit">LET'S GO</button> *@
+                        </form>
+                    </div>
+                </div>
+
+<!----------------------------------- Show stations from source to destination ------------------->    
+            
+                <div class="right"> 
+                    <div>                      
+<div>
+     <h1>Metro Between Stations : </h1>
+<div>
+  <div>
+    <br><br>
+            <p style="font-weight: bold; text-align: center;">  
+              Fare: रु @ViewData["Fare"] &nbsp;
+                Time: @ViewData["Time"] &nbsp;
+                 Stop:  @ViewData["Stop"] &nbsp;
+                Interchange:  @ViewData["InterchangeStops"] </p> 
+                <br/>
+                <hr style="height: 5px; color: rgb(128, 122, 122); background-color: rgb(112, 108, 108);"/>
+            </div>
+        </div>
+        
+    @if (Model != null && Model.Any())
+{
+   
+    <ul>
+        @foreach (var station in Model)
+
+
+
+        {
+            @if (station != null)
+
+            {
+                <li  style="color: black;">@station.StationName</li>
+            }
+        }
+    </ul>
+} 
+</div>
+
+</div>
+                            
+                </div>
+            </div>
+        </section>
+
+
+
+ 
+     <!----------------------------------------  Footer------------------------------------------------------------>
+
+    <footer style="background-color: #65B741;">
+      <div>
+        <span class="logo">Metro Router</span>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <div class="link-cat" onclick="footerToggle(this)">
+            <span class="footer-toggle"></span>
+            <span class="footer-cat">About MMRC</span>
+          </div>
+          <ul class="footer-cat-links">
+            <li>
+              <a href="https://mmrcl.com/en/tenders/tenders-published"><span>Tenders</span></a>
+            </li>
+            <li>
+              <a href="https://mmrcl.com/en/project/project-route"><span>Project</span></a>
+            </li>
+            <li>
+              <a href="https://mmrcl.com/en/media-centre/news"><span>News</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <div class="link-cat" onclick="footerToggle(this)">
+            <span class="footer-toggle"></span>
+            <span class="footer-cat">Policy</span>
+          </div>
+          <ul class="footer-cat-links">
+            <li>
+              <a href="https://mmrcl.com/en/about-mmrc/mmrc-green-policy"><span>MMRC Green Policy</span></a>
+            </li>
+            <li>
+              <a href="https://mmrcl.com/en/policy/disclaimer"><span>Disclaimer</span></a>
+            </li>
+            <li>
+              <a href="https://mmrcl.com/map/"><span>Project Route</span></a>
+            </li>
+            <li>
+              <a href="https://mmrcl.com/en/policy/privacy-policy"><span>Privacy Policy</span></a>
+            </li>
+            <li>
+              <a href="https://mmrcl.com/en/other-govt-sites/other-metros"><span>Other Metros</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <div class="link-cat" onclick="footerToggle(this)">
+            <span class="footer-toggle"></span>
+            <span class="footer-cat">Other Govt Sites</span>
+          </div>
+          <ul class="footer-cat-links">
+            <li>
+              <a href="https://mohua.gov.in/"><span>Govt of India</span></a>
+            </li>
+            <li>
+              <a href="https://mohua.gov.in/"><span>MoHUA</span></a>
+            </li>
+            <li>
+              <a href="https://indianrailways.gov.in/"><span>Indian Railways</span></a>
+            </li>
+            <li>
+              <a href="https://mmrda.maharashtra.gov.in/"><span>MMRDA</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3" id="newsletter">
+          <span>Stay Connected</span>
+          <form id="subscribe">
+            <input
+              type="email"
+              id="subscriber-email"
+              placeholder="Enter Email Address"
+            />
+            <input type="submit" value="Subscribe" id="btn-scribe" />
+          </form>
+
+          <div class="social-links social-2">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-tumblr"></i></a>
+            <a href=""><i class="fab fa-reddit-alien"></i></a>
+          </div>
+
+          <div id="address">
+            <span>Office Location</span>
+            <ul>
+              <li>
+                <i class="far fa-building"></i>
+                <div>
+                  Los Angeles<br />
+                  Office 9B, Sky High Tower, New A Ring Road, Los Angeles
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-gopuram"></i>
+                <div>
+                  Delhi<br />
+                  Office 150B, Behind Sana Gate Char Bhuja Tower, Station Road,
+                  Delhi
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="social-links social-1 col-6">
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-linkedin-in"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-tumblr"></i></a>
+          <a href=""><i class="fab fa-reddit-alien"></i></a>
+        </div>
+      </div>
+      <div id="copyright">&copy; All Rights Reserved </div>
+      <div id="owner">
+        <span>
+          Designed by <a href="https://www.codingtuting.com">.Com</a>
+        </span>
+      </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+@* Origional Code 
+
+@{
+    ViewBag.Title = "JourneyPlanner";
+}
+
+<h2>Journey Planner</h2>
+@using (Html.BeginForm("MetroBetweenStations", "Home", FormMethod.Post))
+
+
+
+{
+    <div class="form-group">
+        @Html.Label("Source Station:")
+        @if (ViewBag.sourceStationId != null)
+
+
+
+        {
+            @Html.DropDownList("sourceStationId", ViewBag.sourceStationId as SelectList, "Select Source Station", new
+
+                {
+                    @class =
+                    "form-control"
+
+                })
+        }
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Destination Station:")
+        @if (ViewBag.destinationStationId != null)
+
+
+
+        {
+            @Html.DropDownList("destinationStationId", ViewBag.destinationStationId as SelectList, "Select Destination Station",
+                    new { @class = "form-control" })
+        }
+    </div>
+
+    <button type="submit" class="btn btn-primary">Plan Journey</button>
+}
+
+
+
+    
+@if (Model != null && Model.Any())
+
+
+
+{
+    <h3>Stations Between Source and Destination:</h3>
+    <ul>
+        @foreach (var station in Model)
+
+
+
+        {
+            @if (station != null)
+
+            {
+                <li>@station.StationName</li>
+            }
+        }
+    </ul>
+} 
+*@

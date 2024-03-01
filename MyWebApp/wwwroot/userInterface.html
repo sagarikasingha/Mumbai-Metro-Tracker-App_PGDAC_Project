@@ -1,0 +1,428 @@
+<!---------------------------------- Designed by CodingTuting.Com ------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|Nanum+Gothic:700|Raleway&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="userInterface.css">
+    <script src="./userInterface.js"></script>
+
+    <title>Metro Route Map</title>
+</head>
+
+<body>
+    <header id="topHeader">
+        <nav>
+            <img src="./images/site_logo.png" alt="not found" srcset="" />
+            <!-- <div class="menu-btn-3" onclick="menuBtnFunction(this)">
+                <span></span>
+            </div> -->
+            <div class="mainMenu">
+                <a href="./index.html"><span>Home</span></a>
+                <a href="./about.html"><span>About</span></a>
+                <a href="./blog.html"><span>Blog</span></a>
+                <a href="http://localhost:5109/Home/FeedbackForm"><span>Feedback</span></a>
+                <a href="http://localhost:5109/Home/UserLogin" class="signin">User Login</a>
+                <a class="signin" href="http://localhost:5109/Home/UserRegistration">
+                    User Registration
+                </a>
+
+                <a class="signin" href="http://localhost:5109/Home/AdminLogin">
+                    Admin Login
+                </a>
+            </div class="mainMenu">
+        </nav>
+    </header>
+
+
+    <section id="intro">
+        <div id="intro-info">
+            <div>
+                <h1>Welcome To Mumbai Metro</h1>
+                <div id="intro-tag-btn">
+                    <span>The smartest way to travel....</span>
+                    <a href="http://localhost:3000/" class="brand-btn">Ticket Booking</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="development-img">
+            <img src="https://www.dropbox.com/s/7hwnjccu15vt90e/mobileDevlopment.svg?raw=1" alt="Mobile App Development"
+                title="Mobile App Development" />
+        </div>
+    </section>
+
+    <section id="delivery">
+        <h1 class="sec-heading">Menu</h1>
+        <div class="col-5 delivery-img">
+            <img src="https://www.dropbox.com/s/ipx91osglyczpdt/delivery_experience.svg?raw=1"
+                alt="Productivity Delivering Experience" title="Delivering Experience Since 2009" />
+        </div>
+        <div class="col-7">
+            <h2>Want to plan Journey !</h2>
+            <p>
+                Mumbai Metro operates on a contactless smart card system called "Mumbai Metro One Card."You can purchase
+                these cards at metro stations and recharge them as needed.Fare is calculated based on the distance
+                traveled. Fare charts are available at <br /><br />stations and on the Mumbai Metro website.Mumbai Metro
+                operates from early morning until late evening.
+                The exact timings may vary slightly from station to station, so it's advisable to check the schedule on
+                the official Mumbai Metro website or at the stations.
+            </p>
+            <div class="btn-footer">
+                <a href="http://localhost:5109/Home/JourneyPlanner" class="brand-btn">Journey Planner</a>
+            </div>
+        </div><br><br><br>
+
+        <div class="slider">
+            <div class="col-6 slide-text">
+                <div>
+                    <h2>MAP</h2>
+                    <p>
+                        <strong>Line 1 (Versova-Andheri-Ghatkopar):</strong>This is the first metro line in Mumbai, also
+                        known as the "Versova-Andheri-Ghatkopar (VAG)" corridor. <br>
+                        <strong>Line 2A (Dahisar to D.N. Nagar):</strong>It extends from Dahisar to D.N. Nagar in
+                        Andheri. <br>
+
+                        <strong>Line 3 (Colaba-Bandra-Seepz):</strong>Also known as the "Metro 3" or "Aqua Line," this
+                        line connects Colaba in South Mumbai.
+                    </p>
+                    <a href="http://localhost:5109/Home/DisplayAllLineStations" class="brand-btn">Metro Mini Map</a>
+                </div>
+            </div>
+            <div class="col-6 slide-img">
+                <img src="https://www.dropbox.com/s/ipx91osglyczpdt/delivery_experience.svg?raw=1"
+                    alt="World Travel App Development" title="World Travel Protection" />
+            </div>
+        </div>
+
+        <br><br><br><br><br>
+        <div class="col-5 delivery-img">
+            <img src="https://www.dropbox.com/s/ipx91osglyczpdt/delivery_experience.svg?raw=1"
+                alt="Productivity Delivering Experience" title="Delivering Experience Since 2009" />
+        </div>
+        <div class="col-7">
+            <h2>Metro Time Table</h2>
+            <p>
+                Mumbai Metro operates from early morning until late evening.
+                The exact timings may vary slightly from station to station, so it's advisable to check the schedule on
+                the official Mumbai Metro website or at the stations. <br>
+                <strong>Weekdays (Monday to Friday):</strong> <br>
+                First Train: 5:30 AM <br>
+                Last Train: 11:30 PM <br>
+                <strong>Weekends (Saturday and Sunday):</strong> <br>
+                First Train: 6:30 AM <br>
+                Last Train: 11:30 PM
+
+            </p>
+            <div class="btn-footer">
+                <a href="http://localhost:5109/Home/TrainSchedule" class="brand-btn">Time Table</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!---------------------------------------- Services -------------------------------------------->
+    <section id="services">
+        <h1 class="sec-heading">Our Services</h1>
+        <ul>
+            <li>
+                <div>
+                    <a href="">
+                        <i class=" fas fa-solid fa-clock"></i><span>Time Table</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <i class=" fas fa-solid fa-money-bill-wave"></i><span>Calculated Fare</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <i class="fas fa-regular fa-hourglass-half"></i><span>Estimated Time Travel</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <i class=" fas fa-solid fa-credit-card"></i><span>Ticket Booking</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <i class=" fas fa-solid fa-street-view"></i><span>Route Map Locator</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <i class=" fas fa-solid fa-address-card"></i><span>Authentication</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+
+        <div id="service-footer">
+            <a href="#" class="brand-btn">View All Service</a>
+        </div>
+    </section>
+
+    <section id="success-story">
+        <h1 class="sec-heading">Information Center</h1>
+
+        <div class="slider">
+            <div class="col-3 slide-text">
+                <div>
+                    <h2>Station Facilities</h2>
+                    <p>
+                        The Mumbai Metro has been instrumental in transforming the city's transportation landscape and
+                        has seen several success stories since its inception. Here are some notable success stories
+                        attributed to the Mumbai Metro:
+                    </p>
+                    <a href="./station-facilities.html" class="brand-btn">Facilities</a>
+                </div>
+            </div>
+             <div class="col-3 slide-text">
+                <div>
+                    <h2>Do's  & Dont's</h2>
+                    <p>
+                       Passengers can help maintain a safe, secure, and pleasant environment in the Mumbai Metro, and ensure that the service is available and accessible to everyone who needs it.
+                    </p>
+                    <a href="./do-and-dont.htm" class="brand-btn">Do's & Dont't</a>
+                </div>
+            </div>
+            <div class="col-6 slide-img">
+                <img src="https://www.dropbox.com/s/ipx91osglyczpdt/delivery_experience.svg?raw=1"
+                    alt="World Travel App Development" title="World Travel Protection" />
+            </div>
+        </div><br>
+
+        <!------------------------------------- DO's and Dont's -------------------------------->
+    
+
+    </section>
+
+    <section id="revenue" class="brand-logos">
+        <h1 class="sec-heading">We Drive Growth & Revenue for the Best Companies</h1>
+        <div>
+            <a><img src="https://www.dropbox.com/s/lmvtthec9yn0ti6/Allianz.png?raw=1" alt="Allianz"
+                    title="Work with Allianz"></a>
+            <a><img src="https://www.dropbox.com/s/kotgq2u4qr34i2u/audi.jpg?raw=1" alt="Audi"
+                    title="Work with Audi"></a>
+            <a><img src="https://www.dropbox.com/s/t5dapt3lkz7rdhe/BMW.png?raw=1" alt="BMW" title="Work with BMW"></a>
+            <a><img src="https://www.dropbox.com/s/ocqbsbgj590ztyy/ESPN.png?raw=1" alt="ESPN"
+                    title="Work with ESPN"></a>
+            <a><img src="https://www.dropbox.com/s/2maaqxijcmbaqxg/LG.png?raw=1" alt="LG" title="Work with LG"></a>
+            <a><img src="https://www.dropbox.com/s/yn3gj203hrdjfu7/Logo_NIKE.png?raw=1" alt="Nike"
+                    title="Work with Nike"></a>
+            <a><img src="https://www.dropbox.com/s/gfxa6exv7h1ro6q/Suzuki_logo.png?raw=1" alt="Suzuki"
+                    title="Work with Suzuki"></a>
+            <a><img src="https://www.dropbox.com/s/b7vwmjf6e0owybv/Visa.svg?raw=1" alt="Visa"
+                    title="Work with Visa"></a>
+        </div>
+    </section>
+
+    <section id="highlights">
+        <h1 class="sec-heading">Metro Highlights</h1>
+
+        <div class="slider">
+            <div class="col-6 slide-text">
+                <div>
+                    <h2>
+                        "Connecting Dreams, Empowering Journeys"</h2>
+                    <p>
+                        These highlights showcase the importance and impact of the Mumbai Metro as a vital component of
+                        the city's transportation infrastructure, catering to the needs of millions of commuters and
+                        facilitating urban development and growth.
+                    </p>
+                    <a href="" class="brand-btn">See More</a>
+                </div>
+            </div>
+            <div class="col-6 slide-img">
+                <img src="https://www.dropbox.com/s/vnkswx20c0dg5ta/analyzing.jpg?raw=1" alt="Team Work in Los Angeles"
+                    title="Company Team Work" />
+            </div>
+        </div>
+    </section>
+
+    <section id="partners" class="brand-logos">
+        <h1 class="sec-heading">Our Partners</h1>
+        <div>
+            <a><img src="https://www.dropbox.com/s/mk5ca04seizpf8l/aws.svg?raw=1" alt="Work with AWS"
+                    title="Our Work"></a>
+            <a><img src="https://www.dropbox.com/s/r9utt5nj9k9m1t8/Dell.png?raw=1" alt="Dell"
+                    title="Work with Dell"></a>
+            <a><img src="https://www.dropbox.com/s/umw9g0zgm1ecfvn/Intel.png?raw=1" alt="intel"
+                    title="Work with intell"></a>
+            <a><img src="https://www.dropbox.com/s/x0hrha2dosey99z/ibm.png?raw=1" alt="IBM" title="Work with IBM"></a>
+            <a><img src="https://www.dropbox.com/s/ekzu1wcki6jziay/Microsoft.svg?raw=1" alt="Microsoft"
+                    title="Work with Microsoft"></a>
+            <a><img src="https://www.dropbox.com/s/lvl5cp14i3v0wgi/Nasscom.png?raw=1" alt="Nasscom"
+                    title="Work with Nasscom"></a>
+            <a><img src="https://www.dropbox.com/s/h66k9jaaknxaum4/Samsung.png?raw=1" alt="Samsung"
+                    title="Work with Samsung"></a>
+            <a><img src="https://www.dropbox.com/s/86cbtf78khj0q9z/Nvidia.png?raw=1" alt="Nvidia"
+                    title="Work with Nvidia"></a>
+        </div>
+    </section>
+
+    <section id="topList" class="brand-logos">
+        <h1 class="sec-heading">Recognition as Top Mobile Development Company</h1>
+        <div>
+            <a>
+                <img src="https://www.dropbox.com/s/19czj59oq0orbfa/tm.png?raw=1"
+                    alt="Top 10 MobleApp Development Companies" title="Top 10 MobleApp Development Companies">
+                <span>Recognised Among Top 10 MobleApp Development Companies</span>
+            </a>
+            <a>
+                <img src="https://www.dropbox.com/s/130734rofy1f261/tata.png?raw=1"
+                    alt="Top 10 MobleApp Development Companies" title="Top 10 MobleApp Development Companies">
+                <span>Recognised Among Top 10 MobleApp Development Companies</span>
+            </a>
+            <a>
+                <img src="https://www.dropbox.com/s/k17kwv9hiu9w98d/Infosys_logo.png?raw=1"
+                    alt="Top 10 MobleApp Development Companies" title="Top 10 MobleApp Development Companies">
+                <span>Recognised Among Top 10 MobleApp Development Companies</span>
+            </a>
+            <a>
+                <img src="https://www.dropbox.com/s/mm4cnforc4pvwac/Wipro_Logo.png?raw=1"
+                    alt="Top 10 MobleApp Development Companies" title="Top 10 MobleApp Development Companies">
+                <span>Recognised Among Top 10 MobleApp Development Companies</span>
+            </a>
+            <a>
+                <img src="https://www.dropbox.com/s/n4scpig8b3tfqkq/Amazon_logo.svg?raw=1"
+                    alt="Top 10 MobleApp Development Companies" title="Top 10 MobleApp Development Companies">
+                <span>Recognised Among Top 10 MobleApp Development Companies</span>
+            </a>
+        </div>
+    </section>
+
+
+    <!---------------------------------------- Footer Section -------------------------------------->
+    <footer>
+        <div>
+            <span class="logo">Metro Route Guider</span>
+        </div>
+
+        <div class="row">
+            <div class="col-3">
+                <span class="footer-cat">Solution</span>
+                <ul class="footer-cat-links">
+                    <li><a href=""><span>Interprise App Development</span></a></li>
+                    <li><a href=""><span>Android App Development</span></a></li>
+                    <li><a href=""><span>ios App Development</span></a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <span class="footer-cat">Industries</span>
+                <ul class="footer-cat-links">
+                    <li><a href=""><span>Healthcare</span></a></li>
+                    <li><a href=""><span>Sports</span></a></li>
+                    <li><a href=""><span>ECommerce</span></a></li>
+                    <li><a href=""><span>Construction</span></a></li>
+                    <li><a href=""><span>Club</span></a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <span class="footer-cat">Quick Links</span>
+                <ul class="footer-cat-links">
+                    <li><a href=""><span>Reviews</span></a></li>
+                    <li><a href=""><span>Terms & Condition</span></a></li>
+                    <li><a href=""><span>Disclaimer</span></a></li>
+                    <li><a href=""><span>Site Map</span></a></li>
+                </ul>
+            </div>
+            <div class="col-3" id="newsletter">
+                <span class="footer-cat">Stay Connected</span>
+                <form id="subscribe">
+                    <input type="email" id="subscriber-email" placeholder="Enter Email Address" />
+                    <input type="submit" value="Subscribe" id="btn-scribe" />
+                </form>
+
+                <div class="social-links social-2">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-tumblr"></i></a>
+                    <a href=""><i class="fab fa-reddit-alien"></i></a>
+                </div>
+
+                <div id="address">
+                    <span class="footer-cat">Office Location</span>
+                    <ul>
+                        <li>
+                            <i class="far fa-building"></i>
+                            <div>Los Angeles<br />
+                                Office 9B, Sky High Tower, New A Ring Road, Los Angeles</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-gopuram"></i>
+                            <div>Delhi<br />
+                                Office 150B, Behind Sana Gate Char Bhuja Tower, Station Road, Delhi</div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="social-links social-1 col-6">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-tumblr"></i></a>
+                <a href=""><i class="fab fa-reddit-alien"></i></a>
+            </div>
+        </div>
+        <div id="copyright">
+            &copy; All Rights Reserved 2019-2020
+        </div>
+        <div id="owner">
+            <span>
+                Designed by <a href="https://www.codingtuting.com">CodingTuting.Com</a>
+            </span>
+        </div>
+        <a href="#topHeader" id="gotop">Top</a>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="ScriptIT.js"></script>
+
+</body>
+
+</html>
+
+
+<!------------------------- Origional Code  ----------------------------------->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome To Mumbai Metro </h1>
+    <h2>Menu</h2>
+    <h3>Want to plan Journey !</h3>
+    <a href="http://localhost:5109/Home/JourneyPlanner">Journey Planner</a><br><br>
+    <h3>MAP</h3>
+    <a href="http://localhost:5109/Home/DisplayAllLineStations"> Metro Mini Map</a>
+    <h3>Metro Time Table</h3>
+    <a href="http://localhost:5109/Home/TrainSchedule"> Time table</a>
+</body>
+</html> -->

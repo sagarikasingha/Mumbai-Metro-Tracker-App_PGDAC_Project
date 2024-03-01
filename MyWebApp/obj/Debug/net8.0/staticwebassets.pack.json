@@ -1,0 +1,557 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\about.css",
+      "PackagePath": "staticwebassets\\about.css"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\about.html",
+      "PackagePath": "staticwebassets\\about.html"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\adminDashboard.html",
+      "PackagePath": "staticwebassets\\adminDashboard.html"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\blog.css",
+      "PackagePath": "staticwebassets\\blog.css"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\blog.html",
+      "PackagePath": "staticwebassets\\blog.html"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\contact.css",
+      "PackagePath": "staticwebassets\\contact.css"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\contact.html",
+      "PackagePath": "staticwebassets\\contact.html"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\do-and-dont.htm",
+      "PackagePath": "staticwebassets\\do-and-dont.htm"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\272137941_450846860018410_7040109140022906993_n.webp",
+      "PackagePath": "staticwebassets\\images\\272137941_450846860018410_7040109140022906993_n.webp"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\272322961_3101586466745273_7015655484062579515_n.webp",
+      "PackagePath": "staticwebassets\\images\\272322961_3101586466745273_7015655484062579515_n.webp"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\285870669_747869326250440_1918195354402554979_n.webp",
+      "PackagePath": "staticwebassets\\images\\285870669_747869326250440_1918195354402554979_n.webp"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Allilines.jpeg",
+      "PackagePath": "staticwebassets\\images\\Allilines.jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Designer (1).jpeg",
+      "PackagePath": "staticwebassets\\images\\Designer (1).jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Designer (10).jpeg",
+      "PackagePath": "staticwebassets\\images\\Designer (10).jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Designer (11).jpeg",
+      "PackagePath": "staticwebassets\\images\\Designer (11).jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Designer (12).jpeg",
+      "PackagePath": "staticwebassets\\images\\Designer (12).jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Designer (13).jpeg",
+      "PackagePath": "staticwebassets\\images\\Designer (13).jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Designer (14).jpeg",
+      "PackagePath": "staticwebassets\\images\\Designer (14).jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Designer (15).jpeg",
+      "PackagePath": "staticwebassets\\images\\Designer (15).jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Designer (19).jpeg",
+      "PackagePath": "staticwebassets\\images\\Designer (19).jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Designer (2).jpeg",
+      "PackagePath": "staticwebassets\\images\\Designer (2).jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Designer (20).jpeg",
+      "PackagePath": "staticwebassets\\images\\Designer (20).jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Designer (21).jpeg",
+      "PackagePath": "staticwebassets\\images\\Designer (21).jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Designer (3).jpeg",
+      "PackagePath": "staticwebassets\\images\\Designer (3).jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Designer (4).jpeg",
+      "PackagePath": "staticwebassets\\images\\Designer (4).jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Designer (5).jpeg",
+      "PackagePath": "staticwebassets\\images\\Designer (5).jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Designer (6).jpeg",
+      "PackagePath": "staticwebassets\\images\\Designer (6).jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Designer (7).jpeg",
+      "PackagePath": "staticwebassets\\images\\Designer (7).jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Designer (8).jpeg",
+      "PackagePath": "staticwebassets\\images\\Designer (8).jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Designer (9).jpeg",
+      "PackagePath": "staticwebassets\\images\\Designer (9).jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Designer.jpeg",
+      "PackagePath": "staticwebassets\\images\\Designer.jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Redlines.jpeg",
+      "PackagePath": "staticwebassets\\images\\Redlines.jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Reelvideo-66463.mp4",
+      "PackagePath": "staticwebassets\\images\\Reelvideo-66463.mp4"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Reelvideo-75196.mp4",
+      "PackagePath": "staticwebassets\\images\\Reelvideo-75196.mp4"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\WhatsApp Image 2024-02-23 at 12.39.28 PM.jpeg",
+      "PackagePath": "staticwebassets\\images\\WhatsApp Image 2024-02-23 at 12.39.28 PM.jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\Yellowlines.jpeg",
+      "PackagePath": "staticwebassets\\images\\Yellowlines.jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\afc-01.svg",
+      "PackagePath": "staticwebassets\\images\\afc-01.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\avm-01 (1).svg",
+      "PackagePath": "staticwebassets\\images\\avm-01 (1).svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\avm-01.svg",
+      "PackagePath": "staticwebassets\\images\\avm-01.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\baggage.svg",
+      "PackagePath": "staticwebassets\\images\\baggage.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\bluelines.jpeg",
+      "PackagePath": "staticwebassets\\images\\bluelines.jpeg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\cctv-01.svg",
+      "PackagePath": "staticwebassets\\images\\cctv-01.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\coronavirus.svg",
+      "PackagePath": "staticwebassets\\images\\coronavirus.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\corpse.svg",
+      "PackagePath": "staticwebassets\\images\\corpse.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\customer-care-01.svg",
+      "PackagePath": "staticwebassets\\images\\customer-care-01.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\dangerous.svg",
+      "PackagePath": "staticwebassets\\images\\dangerous.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\do-1.svg",
+      "PackagePath": "staticwebassets\\images\\do-1.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\do-10.svg",
+      "PackagePath": "staticwebassets\\images\\do-10.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\do-11.svg",
+      "PackagePath": "staticwebassets\\images\\do-11.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\do-2.svg",
+      "PackagePath": "staticwebassets\\images\\do-2.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\do-3.svg",
+      "PackagePath": "staticwebassets\\images\\do-3.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\do-4.svg",
+      "PackagePath": "staticwebassets\\images\\do-4.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\do-5.svg",
+      "PackagePath": "staticwebassets\\images\\do-5.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\do-6.svg",
+      "PackagePath": "staticwebassets\\images\\do-6.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\do-7.svg",
+      "PackagePath": "staticwebassets\\images\\do-7.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\do-8.svg",
+      "PackagePath": "staticwebassets\\images\\do-8.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\do-9.svg",
+      "PackagePath": "staticwebassets\\images\\do-9.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\dont-1.svg",
+      "PackagePath": "staticwebassets\\images\\dont-1.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\dont-10.svg",
+      "PackagePath": "staticwebassets\\images\\dont-10.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\dont-11.svg",
+      "PackagePath": "staticwebassets\\images\\dont-11.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\dont-3.svg",
+      "PackagePath": "staticwebassets\\images\\dont-3.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\dont-7.svg",
+      "PackagePath": "staticwebassets\\images\\dont-7.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\dont-8.svg",
+      "PackagePath": "staticwebassets\\images\\dont-8.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\dont-9.svg",
+      "PackagePath": "staticwebassets\\images\\dont-9.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\elevator-01.svg",
+      "PackagePath": "staticwebassets\\images\\elevator-01.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\escalator-01.svg",
+      "PackagePath": "staticwebassets\\images\\escalator-01.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\first-aid-01.svg",
+      "PackagePath": "staticwebassets\\images\\first-aid-01.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\fotor-ai-2024022413139.jpg",
+      "PackagePath": "staticwebassets\\images\\fotor-ai-2024022413139.jpg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\fotor-ai-202402241320 (1).jpg",
+      "PackagePath": "staticwebassets\\images\\fotor-ai-202402241320 (1).jpg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\fotor-ai-202402241320.jpg",
+      "PackagePath": "staticwebassets\\images\\fotor-ai-202402241320.jpg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\giphy-downsized.gif",
+      "PackagePath": "staticwebassets\\images\\giphy-downsized.gif"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\image_10.webp",
+      "PackagePath": "staticwebassets\\images\\image_10.webp"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\image_11.webp",
+      "PackagePath": "staticwebassets\\images\\image_11.webp"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\image_12.webp",
+      "PackagePath": "staticwebassets\\images\\image_12.webp"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\image_13.webp",
+      "PackagePath": "staticwebassets\\images\\image_13.webp"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\image_14.jpg",
+      "PackagePath": "staticwebassets\\images\\image_14.jpg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\image_15.webp",
+      "PackagePath": "staticwebassets\\images\\image_15.webp"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\image_16.webp",
+      "PackagePath": "staticwebassets\\images\\image_16.webp"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\image_17.jpg",
+      "PackagePath": "staticwebassets\\images\\image_17.jpg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\image_18.jpg",
+      "PackagePath": "staticwebassets\\images\\image_18.jpg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\image_19.jpg",
+      "PackagePath": "staticwebassets\\images\\image_19.jpg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\image_20.jpg",
+      "PackagePath": "staticwebassets\\images\\image_20.jpg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\image_21.jpg",
+      "PackagePath": "staticwebassets\\images\\image_21.jpg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\image_22.jpg",
+      "PackagePath": "staticwebassets\\images\\image_22.jpg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\image_23.jpg",
+      "PackagePath": "staticwebassets\\images\\image_23.jpg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\image_24.jpg",
+      "PackagePath": "staticwebassets\\images\\image_24.jpg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\image_25.jpg",
+      "PackagePath": "staticwebassets\\images\\image_25.jpg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\image_5.jpg",
+      "PackagePath": "staticwebassets\\images\\image_5.jpg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\image_6.avif",
+      "PackagePath": "staticwebassets\\images\\image_6.avif"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\image_7.avif",
+      "PackagePath": "staticwebassets\\images\\image_7.avif"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\image_8.avif",
+      "PackagePath": "staticwebassets\\images\\image_8.avif"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\image_9.webp",
+      "PackagePath": "staticwebassets\\images\\image_9.webp"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\images_3.webp",
+      "PackagePath": "staticwebassets\\images\\images_3.webp"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\images_4.jpg",
+      "PackagePath": "staticwebassets\\images\\images_4.jpg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\img_1.jpg",
+      "PackagePath": "staticwebassets\\images\\img_1.jpg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\info-01.svg",
+      "PackagePath": "staticwebassets\\images\\info-01.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\line1.png",
+      "PackagePath": "staticwebassets\\images\\line1.png"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\line10.png",
+      "PackagePath": "staticwebassets\\images\\line10.png"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\line11.png",
+      "PackagePath": "staticwebassets\\images\\line11.png"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\line12.png",
+      "PackagePath": "staticwebassets\\images\\line12.png"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\line13.png",
+      "PackagePath": "staticwebassets\\images\\line13.png"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\line14.png",
+      "PackagePath": "staticwebassets\\images\\line14.png"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\line2a.png",
+      "PackagePath": "staticwebassets\\images\\line2a.png"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\line2b.png",
+      "PackagePath": "staticwebassets\\images\\line2b.png"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\line3.png",
+      "PackagePath": "staticwebassets\\images\\line3.png"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\line4.png",
+      "PackagePath": "staticwebassets\\images\\line4.png"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\line4a.png",
+      "PackagePath": "staticwebassets\\images\\line4a.png"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\line5.png",
+      "PackagePath": "staticwebassets\\images\\line5.png"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\line6.png",
+      "PackagePath": "staticwebassets\\images\\line6.png"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\line7.png",
+      "PackagePath": "staticwebassets\\images\\line7.png"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\line7a.png",
+      "PackagePath": "staticwebassets\\images\\line7a.png"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\line8.png",
+      "PackagePath": "staticwebassets\\images\\line8.png"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\line9.png",
+      "PackagePath": "staticwebassets\\images\\line9.png"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\littering.svg",
+      "PackagePath": "staticwebassets\\images\\littering.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\lost-found-01.svg",
+      "PackagePath": "staticwebassets\\images\\lost-found-01.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\metro.mp4",
+      "PackagePath": "staticwebassets\\images\\metro.mp4"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\military.svg",
+      "PackagePath": "staticwebassets\\images\\military.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\security-01.svg",
+      "PackagePath": "staticwebassets\\images\\security-01.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\shopping-01.svg",
+      "PackagePath": "staticwebassets\\images\\shopping-01.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\shutterstock-403396726-cropped-1578895273-1603085603 - Copy.jpg",
+      "PackagePath": "staticwebassets\\images\\shutterstock-403396726-cropped-1578895273-1603085603 - Copy.jpg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\site_logo.png",
+      "PackagePath": "staticwebassets\\images\\site_logo.png"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\station-01.svg",
+      "PackagePath": "staticwebassets\\images\\station-01.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\ticket-counter-01.svg",
+      "PackagePath": "staticwebassets\\images\\ticket-counter-01.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\images\\washroom-01.svg",
+      "PackagePath": "staticwebassets\\images\\washroom-01.svg"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\index.css",
+      "PackagePath": "staticwebassets\\index.css"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\index.js",
+      "PackagePath": "staticwebassets\\index.js"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\offences-penalties.htm",
+      "PackagePath": "staticwebassets\\offences-penalties.htm"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\station-facilities.html",
+      "PackagePath": "staticwebassets\\station-facilities.html"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\style.css",
+      "PackagePath": "staticwebassets\\style.css"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\ticket-carriage-rules.html",
+      "PackagePath": "staticwebassets\\ticket-carriage-rules.html"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\userInterface.css",
+      "PackagePath": "staticwebassets\\userInterface.css"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\userInterface.html",
+      "PackagePath": "staticwebassets\\userInterface.html"
+    },
+    {
+      "Id": "D:\\MumbaiMetro\\MyWebApp\\wwwroot\\userInterface.js",
+      "PackagePath": "staticwebassets\\userInterface.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MyWebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MyWebApp.props",
+      "PackagePath": "build\\MyWebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MyWebApp.props",
+      "PackagePath": "buildMultiTargeting\\MyWebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MyWebApp.props",
+      "PackagePath": "buildTransitive\\MyWebApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

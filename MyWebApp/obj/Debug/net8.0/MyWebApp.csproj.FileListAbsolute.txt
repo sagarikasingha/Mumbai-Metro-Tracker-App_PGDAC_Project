@@ -1,0 +1,347 @@
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/appsettings.Development.json
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/appsettings.json
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/MyWebApp.staticwebassets.runtime.json
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/MyWebApp
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/MyWebApp.deps.json
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/MyWebApp.runtimeconfig.json
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/MyWebApp.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/MyWebApp.pdb
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/BouncyCastle.Cryptography.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/Google.Protobuf.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/K4os.Compression.LZ4.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/K4os.Compression.LZ4.Streams.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/K4os.Hash.xxHash.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/Microsoft.Win32.SystemEvents.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/MySql.Data.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/MySql.EntityFrameworkCore.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/System.Drawing.Common.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/System.Security.Permissions.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/System.Windows.Extensions.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/ZstdSharp.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/runtimes/win-x64/native/comerr64.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/runtimes/win-x64/native/gssapi64.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/runtimes/win-x64/native/k5sprt64.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/runtimes/win-x64/native/krb5_64.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/runtimes/win-x64/native/krbcc64.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/bin/Debug/net8.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/obj/Debug/net8.0/MyWebApp.csproj.AssemblyReference.cache
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/obj/Debug/net8.0/MyWebApp.GeneratedMSBuildEditorConfig.editorconfig
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/obj/Debug/net8.0/MyWebApp.AssemblyInfoInputs.cache
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/obj/Debug/net8.0/MyWebApp.AssemblyInfo.cs
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/obj/Debug/net8.0/MyWebApp.csproj.CoreCompileInputs.cache
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/obj/Debug/net8.0/MyWebApp.MvcApplicationPartsAssemblyInfo.cache
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/obj/Debug/net8.0/staticwebassets.build.json
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/obj/Debug/net8.0/staticwebassets.development.json
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/obj/Debug/net8.0/staticwebassets/msbuild.MyWebApp.Microsoft.AspNetCore.StaticWebAssets.props
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/obj/Debug/net8.0/staticwebassets/msbuild.build.MyWebApp.props
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.MyWebApp.props
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.MyWebApp.props
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/obj/Debug/net8.0/staticwebassets.pack.json
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/obj/Debug/net8.0/scopedcss/bundle/MyWebApp.styles.css
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/obj/Debug/net8.0/MyWebApp.csproj.Up2Date
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/obj/Debug/net8.0/MyWebApp.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/obj/Debug/net8.0/refint/MyWebApp.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/obj/Debug/net8.0/MyWebApp.pdb
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/obj/Debug/net8.0/MyWebApp.genruntimeconfig.cache
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/obj/Debug/net8.0/ref/MyWebApp.dll
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/obj/Debug/net8.0/MyWebApp.RazorAssemblyInfo.cache
+/home/cdac/MyWebApp-20240214T105247Z-001/MyWebApp/obj/Debug/net8.0/MyWebApp.RazorAssemblyInfo.cs
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\refint\MyWebApp.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.pdb
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\appsettings.json
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.staticwebassets.runtime.json
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.exe
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.deps.json
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.runtimeconfig.json
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.pdb
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MySql.Data.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MySql.EntityFrameworkCore.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.csproj.AssemblyReference.cache
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.AssemblyInfoInputs.cache
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.AssemblyInfo.cs
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.csproj.CoreCompileInputs.cache
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.RazorAssemblyInfo.cache
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.RazorAssemblyInfo.cs
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.sourcelink.json
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.MyWebApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.build.MyWebApp.props
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MyWebApp.props
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MyWebApp.props
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\scopedcss\bundle\MyWebApp.styles.css
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.csproj.Up2Date
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.genruntimeconfig.cache
+C:\Users\Rutuja Mashere\Downloads\MumbaiMetro\MumbaiMetro\MyWebApp\obj\Debug\net8.0\ref\MyWebApp.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\appsettings.json
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.staticwebassets.runtime.json
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.exe
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.deps.json
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.runtimeconfig.json
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.pdb
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MySql.Data.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MySql.EntityFrameworkCore.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.csproj.AssemblyReference.cache
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.AssemblyInfoInputs.cache
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.AssemblyInfo.cs
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.csproj.CoreCompileInputs.cache
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.RazorAssemblyInfo.cache
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.RazorAssemblyInfo.cs
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.sourcelink.json
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.MyWebApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.build.MyWebApp.props
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MyWebApp.props
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MyWebApp.props
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\scopedcss\bundle\MyWebApp.styles.css
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.csproj.CopyComplete
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\refint\MyWebApp.dll
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.pdb
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.genruntimeconfig.cache
+C:\Users\ishan\Music\MumbaiMetro\MyWebApp\obj\Debug\net8.0\ref\MyWebApp.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\appsettings.Development.json
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\appsettings.json
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.staticwebassets.runtime.json
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.exe
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.deps.json
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.runtimeconfig.json
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.pdb
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\Google.Protobuf.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MySql.Data.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MySql.EntityFrameworkCore.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\ZstdSharp.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.csproj.AssemblyReference.cache
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.AssemblyInfoInputs.cache
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.AssemblyInfo.cs
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.csproj.CoreCompileInputs.cache
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.MvcApplicationPartsAssemblyInfo.cache
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.RazorAssemblyInfo.cache
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.RazorAssemblyInfo.cs
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.sourcelink.json
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets.build.json
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets.development.json
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.MyWebApp.Microsoft.AspNetCore.StaticWebAssets.props
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.build.MyWebApp.props
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MyWebApp.props
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MyWebApp.props
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets.pack.json
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\scopedcss\bundle\MyWebApp.styles.css
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.csproj.CopyComplete
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\refint\MyWebApp.dll
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.pdb
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.genruntimeconfig.cache
+D:\MumbaiMetro[1]\MumbaiMetro\MyWebApp\obj\Debug\net8.0\ref\MyWebApp.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\appsettings.Development.json
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\appsettings.json
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\MyWebApp.staticwebassets.runtime.json
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\MyWebApp.exe
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\MyWebApp.deps.json
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\MyWebApp.runtimeconfig.json
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\MyWebApp.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\MyWebApp.pdb
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\Google.Protobuf.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\MySql.Data.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\MySql.EntityFrameworkCore.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\ZstdSharp.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\MumbaiMetro[1]\MyWebApp\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\MyWebApp.csproj.AssemblyReference.cache
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\MyWebApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\MyWebApp.AssemblyInfoInputs.cache
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\MyWebApp.AssemblyInfo.cs
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\MyWebApp.csproj.CoreCompileInputs.cache
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\MyWebApp.MvcApplicationPartsAssemblyInfo.cache
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\MyWebApp.RazorAssemblyInfo.cache
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\MyWebApp.RazorAssemblyInfo.cs
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\MyWebApp.sourcelink.json
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\staticwebassets.build.json
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\staticwebassets.development.json
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.MyWebApp.Microsoft.AspNetCore.StaticWebAssets.props
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.build.MyWebApp.props
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MyWebApp.props
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MyWebApp.props
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\staticwebassets.pack.json
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\scopedcss\bundle\MyWebApp.styles.css
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\MyWebApp.csproj.CopyComplete
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\MyWebApp.dll
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\refint\MyWebApp.dll
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\MyWebApp.pdb
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\MyWebApp.genruntimeconfig.cache
+D:\MumbaiMetro[1]\MyWebApp\obj\Debug\net8.0\ref\MyWebApp.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\appsettings.Development.json
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\appsettings.json
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.staticwebassets.runtime.json
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.exe
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.deps.json
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.runtimeconfig.json
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MyWebApp.pdb
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\Google.Protobuf.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MySql.Data.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\MySql.EntityFrameworkCore.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\ZstdSharp.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\MumbaiMetro\MyWebApp\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.csproj.AssemblyReference.cache
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.AssemblyInfoInputs.cache
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.AssemblyInfo.cs
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.csproj.CoreCompileInputs.cache
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.MvcApplicationPartsAssemblyInfo.cache
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.RazorAssemblyInfo.cache
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.RazorAssemblyInfo.cs
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.sourcelink.json
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets.build.json
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets.development.json
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.MyWebApp.Microsoft.AspNetCore.StaticWebAssets.props
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.build.MyWebApp.props
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MyWebApp.props
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MyWebApp.props
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\staticwebassets.pack.json
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\scopedcss\bundle\MyWebApp.styles.css
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.csproj.CopyComplete
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.dll
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\refint\MyWebApp.dll
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.pdb
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\MyWebApp.genruntimeconfig.cache
+D:\MumbaiMetro\MyWebApp\obj\Debug\net8.0\ref\MyWebApp.dll

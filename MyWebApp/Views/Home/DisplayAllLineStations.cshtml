@@ -1,0 +1,840 @@
+@model MyWebApp.Models.LineStationsViewModel
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>All Line Stations</title>
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+   
+    <link href="https://fonts.googleapis.com/css?family=Lato|Nanum+Gothic:700|Raleway&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet" />
+   
+    <link rel="stylesheet" href="/index.css" />
+  
+  <style>
+        * {
+            box-sizing: border-box;
+        }
+@* 
+        html {
+            font-size: 14pt;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        } *@
+
+        main {
+            width: 90%;
+            margin: 1rem auto;
+            padding: 0;
+        }
+
+        @@mediascreen and (max-width: 900px) {
+            main {
+                width: 95%;
+            }
+        }
+
+        .title {
+            margin: 0;
+            border: none
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            border: none;
+        }
+
+        .cards div {
+            flex: 1 30%;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            margin: 0.5rem;
+            background-color: #fff;
+            border: 1px solid grey;
+            border-radius: 5px;
+            box-shadow: 0px 10px 15px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .card-image {
+            margin: 0;
+        }
+
+        .card-image img {
+            max-width: 100%;
+            border-radius: 3px 3px 0 0;
+        }
+
+        .card-text {
+            justify-self: flex-start;
+            margin: 0;
+            padding: 1rem;
+            text-align: center;
+           
+        }
+
+        .card-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin: 0;
+            padding: 1rem;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 0.85rem;
+            color: white;
+            @* background-image: radial-gradient(circle, #cc8400, #c20000); *@
+
+            background-size: 400% 100%;
+            background-position: top right;
+            border: none;
+            border-radius: 5px;
+            transition: all .4s ease-in-out;
+        }
+
+        button:hover {
+            @* background-image: radial-gradient(circle, #cc8400, #c20000); *@
+            background-image: radial-gradient(circle, #108703, #108703);       /* Color changing  */ 
+            background-position: center;
+            cursor: pointer;
+        }
+        ul li{
+            color: white;
+            text-align: center;
+        }
+
+.card1{
+            background-color: #c20000;
+            color: white;
+            font-weight: bolder;
+        }
+        .card2{
+            background-color: #45f3ff;
+            color: white;
+            font-weight: bolder;
+        }
+        .card3{
+            background-color: #f7b500;
+            color: white;
+            font-weight: bolder;
+        }
+       
+  /******************************************************** Map With Buttons **********************************/
+
+   #html5lightbox-watermark {
+            display: none !important;
+        }
+
+        .lightboxcontainer {
+            width: 100%;
+            text-align: left;
+        }
+
+        .lightboxleft {
+            width: 40%;
+            float: left;
+        }
+
+        .lightboxright {
+            width: 60%;
+            float: left;
+        }
+
+        .lightboxright iframe {
+            min-height: 390px;
+        }
+
+        .divtext {
+            margin: 36px;
+        }
+
+        .bg-mumbai {
+            background: #064694 url(../images/mumbai-blue.svg) no-repeat;
+            background-size: 100% auto;
+            background-position: bottom;
+        }
+
+        .nav-st-list .nav-item:first-child {
+            margin-left: 0;
+        }
+
+        .nav-st-list .nav-item {
+            margin-left: 1%;
+        }
+
+        .nav-st-list .nav-item .nav-link {
+            /* background-color: #BF9724; */
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 100px;
+            display: block;
+            writing-mode: vertical-lr;
+            letter-spacing: 1px;
+            color: #fff;
+            transition: .2s all;
+            /* text-align: center; */
+        }
+
+        .nav-st-list .nav-item .nav-link:hover {
+            letter-spacing: 3px;
+        }
+
+        .line-blue {
+            background-color: #00AEEF !important;
+            color: #fff;
+        }
+
+        .line-yellow {
+            background-color: #FFC600 !important;
+            color: #fff;
+        }
+
+        .line-aqua {
+            background-color: #00B7BB !important;
+            color: #fff;
+        }
+
+        .line-green {
+            background-color: #00AE5A !important;
+            color: #fff;
+        }
+
+        .line-orange {
+            background-color: #FF8200 !important;
+            color: #fff;
+        }
+
+        .line-pink {
+            background-color: #F99FC9 !important;
+            color: #fff;
+        }
+
+        .line-red {
+            background-color: #DA291C !important;
+            color: #fff;
+        }
+
+        .line-gold {
+            background-color: #BF9724 !important;
+            color: #fff;
+        }
+
+        .line-purple {
+            background-color: #B896D4 !important;
+            color: #fff;
+        }
+
+        .line-magenta {
+            background-color: #E10098 !important;
+            color: #fff;
+        }
+
+        @@media(max-width:768px) {
+            .nav-st-list .nav-item {
+                margin-left: 0;
+                margin-top: 5px;
+                width: 100%;
+            }
+
+            .nav-st-list .nav-item .nav-link {
+                padding: 0;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                /* padding-left: 10px; */
+                text-align: center;
+                height: auto;
+                width: 100%;
+                display: block;
+                writing-mode: horizontal-tb;
+                letter-spacing: 0px;
+                color: #fff;
+                transition: .2s all;
+            }
+
+            .station-list img {
+                display: block;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                padding-left: 100%;
+                width: 100%;
+                height: 570px;
+            }
+
+        }
+
+
+        @@media (max-width: 800px) {
+            .lightboxleft {
+                width: 100%;
+            }
+
+            .lightboxright {
+                width: 100%;
+            }
+
+            .divtext {
+                margin: 12px;
+            }
+        }
+
+        .tab-pane {
+            display: none;
+        }
+
+        .table td,
+        .table th {
+            padding: 0.25rem;
+            vertical-align: top;
+            border-top: 1px solid #dee2e6;
+        }
+        .headingOne{
+        color: white;
+        }
+
+
+        @@media (min-width: 992px) {
+            .modal-dialog {
+                max-width: 650px;
+                margin: 1rem auto;
+            }
+        }
+
+
+  </style>
+   
+
+
+</head>
+
+<body>
+
+    <!-------------------------------- Nav bar--------------------------------------->
+    <header>
+        <img src="~/images/site_logo.png" alt="Site Logo" srcset="" />
+        <nav>
+             <ul class="navigate_links">
+        <li><a href="@Url.Content("~/index.html")">Home</a></li>
+        <li><a href="@Url.Content("~/about.html")">About</a></li>
+        <li><a href="@Url.Content("~/blog.html")">Blog</a></li>
+        <li><a href="@Url.Content("http://localhost:5109/Home/FeedbackForm")">Feedback</a></li>
+      </ul>
+        </nav>
+        <a class="signin" href="http://localhost:5109/Home/UserLogin">
+            <button style="background-color: #108703;">User Login</button>
+        </a>
+
+        <a class="signin" href="http://localhost:5109/Home/UserRegistration">
+            <button style="background-color: #108703;">User Registration</button>
+        </a>
+
+        <a class="signin" href="http://localhost:5109/Home/AdminLogin">
+            <button style="background-color: #108703;">Admin Login</button>
+        </a>
+    </header>
+
+    <hr>
+    <main>
+        <section class="cards">
+            <div class="card card1">
+                <div class="card-image">
+                    <img src="~/images/Redlines.jpeg" alt="not found" />
+                </div>
+                <div class="card-text" style=" margin-top: -15rem;">
+                    <h2>Red Lines</h2>
+                   <h3>
+                        <a href=""
+                            target="_blank"></a>
+                    </h3>
+                    <ul>
+                        @foreach (var stationName in Model.RedLineStations)
+
+                        {
+                            <li>@stationName</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card card2">
+                <div class="card-image">
+                    <img src="~/images/bluelines.jpeg"  alt="not found"/>
+                </div>
+                <div class="card-text"  style=" margin-top: -17rem;">
+                    <h2>Blue Lines</h2>
+                    <h3>
+                        <a href="" target="_blank"></a>
+                    </h3>
+                    <ul>
+                        @foreach (var stationName in Model.BlueLineStations)
+
+                        {
+                            <li>@stationName</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card card3">
+                <div class="card-image">
+                    <img src="~/images/Yellowlines.jpeg"  alt="not found"/>
+                </div>
+                <div class="card-text">
+                    <h2>Yellow Lines</h2>
+                    <h3>
+                        <a href=""
+                            target="_blank"></a>
+                    </h3>
+                    <ul>
+                        @foreach (var stationName in Model.YellowLineStations)
+
+                        {
+                            <li>@stationName</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+   <hr>
+   
+
+
+<!---------------------------------------------------- Map iamges with Buttons ------------------------------------->
+  <!-- -----------------station-list----------------- -->
+    <section class="station-list bg-mumbai bg-blue py-5" id="station">
+        <div class="container">
+            <h2 class="headingOne text-md-center metro-blue1-txt mb-3 mb-md-3">Metro <span class="metro-blue1-txt">Lines
+                    &amp; Stations</span></h2>
+            <div class="row">
+                <div class="col-3 col-sm-3 col-md-12 px-md-0">
+                    <ul class="nav nav-pills nav-st-list mb-3 justify-content-md-center" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link line-blue" id="line1-tab" data-target="line1" data-toggle="pill"
+                                href="#station" role="tab" aria-controls="line1" aria-selected="true">Line 1</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link line-yellow" id="line2a-tab" data-target="line2a" data-toggle="pill"
+                                href="#station" role="tab" aria-controls="line2a" aria-selected="false">Line 2A</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link line-yellow" id="line2b-tab" data-target="line2b" data-toggle="pill"
+                                href="#station" role="tab" aria-controls="line2b" aria-selected="false">Line 2B</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link line-aqua" id="line3-tab" data-target="line3" data-toggle="pill"
+                                href="#station" role="tab" aria-controls="line3" aria-selected="false">Line 3</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link line-green" id="line4-tab" data-target="line4" data-toggle="pill"
+                                href="#station" role="tab" aria-controls="line4" aria-selected="false">Line 4</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link line-green" id="line4a-tab" data-target="line4a" data-toggle="pill"
+                                href="#station" role="tab" aria-controls="line4a" aria-selected="false">Line 4A</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link line-orange" id="line5-tab" data-target="line5" data-toggle="pill"
+                                href="#station" role="tab" aria-controls="line5" aria-selected="false">Line 5</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link line-pink" id="line6-tab" data-target="line6" data-toggle="pill"
+                                href="#station" role="tab" aria-controls="line6" aria-selected="false">Line 6</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link line-red" id="line7-tab" data-target="line7" data-toggle="pill"
+                                href="#station" role="tab" aria-controls="line7" aria-selected="false">Line 7</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link  line-red" id="line7a-tab" data-target="line7a" data-toggle="pill"
+                                href="#station" role="tab" aria-controls="line7a" aria-selected="false">Line 7A</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link line-gold" id="line8-tab" data-target="line8" data-toggle="pill"
+                                href="#station" role="tab" aria-controls="line8" aria-selected="false">Line 8</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link line-red" id="line9-tab" data-target="line9" data-toggle="pill"
+                                href="#station" role="tab" aria-controls="line9" aria-selected="false">Line 9</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link line-green" id="line10-tab" data-target="line10" data-toggle="pill"
+                                href="#station" role="tab" aria-controls="line10" aria-selected="false">Line 10</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link line-green" id="line11-tab" data-target="line11" data-toggle="pill"
+                                href="#station" role="tab" aria-controls="line11" aria-selected="false">Line 11</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link line-orange" id="line12-tab" data-target="line12" data-toggle="pill"
+                                href="#station" role="tab" aria-controls="line12" aria-selected="false">Line 12</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link line-purple" id="line13-tab" data-target="line13" data-toggle="pill"
+                                href="#station" role="tab" aria-controls="line13" aria-selected="false">Line 13</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link line-magenta" id="line14-tab" data-target="line14" data-toggle="pill"
+                                href="#station" role="tab" aria-controls="line14" aria-selected="false">Line 14</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-9 col-sm-9 col-md-12">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="line1" role="tabpanel" aria-labelledby="line1-tab">
+                            <div class="st-line-img-div mt-md-3">
+                                <img class="line1-map" src="~/images/line1.png" height="400" width="1300" />
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="line2a" role="tabpanel" aria-labelledby="line2a-tab">
+                            <div class="st-line-img-div mt-md-3">
+                                <img class="line2a-map line-map" src="~/images/line2a.png" height="400" width="1300" />
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="line2b" role="tabpanel" aria-labelledby="line2b-tab">
+                            <div class="st-line-img-div mt-md-3">
+                                <img class="line2b-map line-map" src="~/images/line2b.png" height="400" width="1300" />
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="line3" role="tabpanel" aria-labelledby="line3-tab">
+                            <div class="st-line-img-div mt-md-3">
+                                <img class="line3-map line-map" src="~/images/line3.png" height="400" width="1300" />
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="line4" role="tabpanel" aria-labelledby="line4-tab">
+                            <div class="st-line-img-div mt-md-3">
+                                <img class="line4-map line-map" src="~/images/line4.png" height="400" width="1300" />
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="line4a" role="tabpanel" aria-labelledby="line4a-tab">
+                            <div class="st-line-img-div mt-md-3">
+                                <img class="line4a-map line-map" src="~/images/line4a.png" height="400" width="1300" />
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="line5" role="tabpanel" aria-labelledby="line5-tab">
+                            <div class="st-line-img-div mt-md-3">
+                                <img class="line5-map line-map" src="~/images/line5.png" height="400" width="1300" />
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="line6" role="tabpanel" aria-labelledby="line6-tab">
+                            <div class="st-line-img-div mt-md-3">
+                                <img class="line6-map line-map" src="~/images/line6.png" height="400" width="1300" />
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="line7" role="tabpanel" aria-labelledby="line7-tab">
+                            <div class="st-line-img-div mt-md-3">
+                                <img class="line7-map line-map" src="~/images/line7.png" height="400" width="1300" />
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="line7a" role="tabpanel" aria-labelledby="line7a-tab">
+                            <div class="st-line-img-div mt-md-3">
+                                <img class="line7a-map line-map" src="~/images/line7a.png" height="400" width="1300" />
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="line8" role="tabpanel" aria-labelledby="line8-tab">
+                            <div class="st-line-img-div mt-md-3">
+                                <img class="line8-map line-map" src="~/images/line8.png" height="400" width="1300" />
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="line9" role="tabpanel" aria-labelledby="line9-tab">
+                            <div class="st-line-img-div mt-md-3">
+                                <img class="line9-map line-map" src="~/images/line9.png" height="400" width="1300" />
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="line10" role="tabpanel" aria-labelledby="line10-tab">
+                            <div class="st-line-img-div mt-md-3">
+                                <img class="line10-map line-map" src="~/images/line10.png" height="400" width="1300" />
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="line11" role="tabpanel" aria-labelledby="line11-tab">
+                            <div class="st-line-img-div mt-md-3">
+                                <img class="line11-map line-map" src="~/images/line11.png" height="400" width="1300" />
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="line12" role="tabpanel" aria-labelledby="line12-tab">
+                            <div class="st-line-img-div mt-md-3">
+                                <img class="line12-map line-map" src="~/images/line12.png" height="400" width="1300" />
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="line13" role="tabpanel" aria-labelledby="line13-tab">
+                            <div class="st-line-img-div mt-md-3">
+                                <img class="line13-map line-map" src="~/images/line13.png" height="400" width="1300" />
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="line14" role="tabpanel" aria-labelledby="line14-tab">
+                            <div class="st-line-img-div mt-md-3">
+                                <img class="line14-map line-map" src="~/images/line14.png" height="400" width="1300" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------- -->
+
+ <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    <!----------------------------------------  Footer------------------------------------------------------------>
+
+    <footer style="background-color: #108703;">
+        <div>
+            <span class="logo">Metro Router</span>
+        </div>
+
+        <div class="row">
+            <div class="col-3">
+                <div class="link-cat" onclick="footerToggle(this)">
+                    <span class="footer-toggle"></span>
+                    <span class="footer-cat">About MMRC</span>
+                </div>
+                <ul class="footer-cat-links">
+                    <li>
+                        <a href="https://mmrcl.com/en/tenders/tenders-published"><span>Tenders</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mmrcl.com/en/project/project-route"><span>Project</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mmrcl.com/en/media-centre/news"><span>News</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <div class="link-cat" onclick="footerToggle(this)">
+                    <span class="footer-toggle"></span>
+                    <span class="footer-cat">Policy</span>
+                </div>
+                <ul class="footer-cat-links">
+                    <li>
+                        <a href="https://mmrcl.com/en/about-mmrc/mmrc-green-policy"><span>MMRC Green Policy</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mmrcl.com/en/policy/disclaimer"><span>Disclaimer</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mmrcl.com/map/"><span>Project Route</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mmrcl.com/en/policy/privacy-policy"><span>Privacy Policy</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mmrcl.com/en/other-govt-sites/other-metros"><span>Other Metros</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <div class="link-cat" onclick="footerToggle(this)">
+                    <span class="footer-toggle"></span>
+                    <span class="footer-cat">Other Govt Sites</span>
+                </div>
+                <ul class="footer-cat-links">
+                    <li>
+                        <a href="https://mohua.gov.in/"><span>Govt of India</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mohua.gov.in/"><span>MoHUA</span></a>
+                    </li>
+                    <li>
+                        <a href="https://indianrailways.gov.in/"><span>Indian Railways</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mmrda.maharashtra.gov.in/"><span>MMRDA</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3" id="newsletter">
+                <span>Stay Connected</span>
+                <form id="subscribe">
+                    <input type="email" id="subscriber-email" placeholder="Enter Email Address" />
+                    <input type="submit" value="Subscribe" id="btn-scribe" />
+                </form>
+
+                <div class="social-links social-2">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-tumblr"></i></a>
+                    <a href=""><i class="fab fa-reddit-alien"></i></a>
+                </div>
+
+                <div id="address">
+                    <span>Office Location</span>
+                    <ul>
+                        <li>
+                            <i class="far fa-building"></i>
+                            <div>
+                                Los Angeles<br />
+                                Office 9B, Sky High Tower, New A Ring Road, Los Angeles
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-gopuram"></i>
+                            <div>
+                                Delhi<br />
+                                Office 150B, Behind Sana Gate Char Bhuja Tower, Station Road,
+                                Delhi
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-links social-1 col-6">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-tumblr"></i></a>
+                <a href=""><i class="fab fa-reddit-alien"></i></a>
+            </div>
+        </div>
+        <div id="copyright">&copy; All Rights Reserved </div>
+        <div id="owner">
+            <span>
+                Designed by <a href="https://www.codingtuting.com">.Com</a>
+            </span>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
+  <script>
+    document.querySelectorAll('.nav-link').forEach(function (link) {
+        link.addEventListener('click', function () {
+            const target = document.querySelector('#' + this.dataset.target);
+            document.querySelectorAll('.tab-pane').forEach(function (pane) {
+                pane.classList.remove('show');
+            });
+            target.classList.add('show');
+            document.querySelectorAll('.tab-pane').forEach(function (pane) {
+                pane.style.display = pane === target ? 'block' : 'none';
+            });
+        });
+    });
+</script>
+
+
+@*
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Line Stations</title>
+<style>
+.line {
+position: relative;
+width: 100%;
+height: 50px; /* Adjust height as needed */
+margin-bottom: 40px;
+background-color: #f0f0f0; /* Default line color */
+}
+
+.station {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 10px; /* Adjust station size as needed */
+height: 10px; /* Adjust station size as needed */
+background-color: #333; /* Station color */
+border-radius: 50%; /* Rounded station */
+display: flex;
+justify-content: center;
+align-items: center;
+color: #111010; /* Station name color */
+font-size: 11px; /* Station name font size */
+font-weight: bold; /* Station name bold */
+padding: 5px; /* Add padding to make station names more visible */
+}
+
+.yellow-line {
+background-color: #FFD700; /* Yellow line color */
+}
+
+.red-line {
+background-color: #FF6347; /* Red line color */
+}
+
+.blue-line {
+background-color: #4169E1; /* Blue line color */
+}
+</style>
+</head>
+<body>
+
+<div class="line yellow-line">
+@foreach (var stationName in Model.YellowLineStations)
+{
+<div class="station" style="left: @(Model.YellowLineStations.IndexOf(stationName) * (95 /
+Model.YellowLineStations.Count) + 2.5)%;"><!-- Offset 2.5% to center stations -->
+@stationName
+</div>
+}
+</div>
+
+<div class="line red-line">
+@foreach (var stationName in Model.RedLineStations)
+{
+<div class="station" style="left: @(Model.RedLineStations.IndexOf(stationName) * (95 / Model.RedLineStations.Count) +
+2.5)%;"><!-- Offset 2.5% to center stations -->
+@stationName
+</div>
+}
+</div>
+
+<div class="line blue-line">
+@foreach (var stationName in Model.BlueLineStations)
+{
+<div class="station" style="left: @(Model.BlueLineStations.IndexOf(stationName) * (95 / Model.BlueLineStations.Count) +
+2.5)%;"><!-- Offset 2.5% to center stations -->
+@stationName
+</div>
+}
+</div>
+
+</body>
+</html> *@

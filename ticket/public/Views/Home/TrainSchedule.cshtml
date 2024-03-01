@@ -1,0 +1,442 @@
+<!----------------------------------- Train Schedule New Code ----------------------------------- ----->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mumbai Metro Route Locator</title>
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Nanum+Gothic:700|Raleway&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet" />
+
+    <!------------------------------------- Table CSS -------------------------------------->
+    <style>
+        table {
+            overflow: hidden;
+
+            th,
+            td {
+                padding: .25em .5em;
+                text-align: left;
+                vertical-align: top;
+            }
+
+            th {
+                background-color: crimson;
+
+                color: #fff;
+            }
+
+            td {
+                background-color: #eee;
+            }
+
+            tr {
+                transition: all 1s ease-in-out;
+
+                &.slide-out {
+                    transform: rotateY(90deg);
+                }
+            }
+
+
+        }
+
+        h3,
+        h2 {
+            text-align: center;
+            align-items: center;
+        }
+
+
+        /************** New CSS ************/
+
+        $box-shadow-mid : 0 1px 3px rgba(0, 0, 0, 0.12),
+        0 1px 1px rgba(0, 0, 0, 0.24);
+
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            background: #F1F1F1;
+        }
+
+        table {
+            background: #FFF;
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            box-shadow: $box-shadow-mid;
+        }
+
+
+        %hover-animation {
+            cursor: pointer;
+            transition: 0.3s background cubic-bezier(0.86, 0, 0.07, 1);
+
+            &:hover {
+                background: rgba(0, 0, 0, 0.1);
+
+                .options {
+                    width: auto;
+                    opacity: 1;
+                }
+            }
+        }
+
+
+
+        tr {
+            border-bottom: 1px solid rgba(140, 140, 140, 0.17);
+        }
+
+        tbody {
+            tr {
+        @@extend%hover-animation;
+            }
+
+        }
+
+        th {
+            line-height: 32px;
+            font-weight: bold;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 1em;
+            max-height: 32px;
+            height: 32px;
+            line-height: 32px;
+
+            &.options {
+                opacity: 0;
+                overflow: hidden;
+                max-height: 32px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                transition: 0.3s opacity cubic-bezier(0.86, 0, 0.07, 1);
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!------------ Naviagation Bar ------------------------------------------------------------->
+
+    <header>
+        <img src="~/images/site_logo.png" alt="Site Logo" srcset="" />
+        <nav>
+            <ul class="navigate_links">
+                <li><a href="@Url.Content("~/index.html")">Home</a></li>
+                <li><a href="@Url.Content("~/about.html")">About</a></li>
+                <li><a href="@Url.Content("~/blog.html")">Blog</a></li>
+                <li><a href="@Url.Content("http://localhost:5109/Home/FeedbackForm")">Feedback</a></li>
+            </ul>
+        </nav>
+        <a class="signin" href="http://localhost:5109/Home/UserLogin">
+            <button style="background-color: crimson">User Login</button>
+        </a>
+
+        <a class="signin" href="http://localhost:5109/Home/UserRegistration">
+            <button style="background-color: crimson">User Registration</button>
+        </a>
+
+        <a class="signin" href="http://localhost:5109/Home/AdminLogin">
+            <button style="background-color: crimson">Admin Login</button>
+        </a>
+    </header>
+
+    <!--------------------------------------------- Tables ----------------------------------------------------------->
+    @using MyWebApp.Models
+    @model List<MyWebApp.Models.TimeTable>
+
+    <h1>Train Schedule</h1>
+
+    <h2>First Train</h2>
+
+    <table>
+        <tr>
+            <th>From</th>
+            <th>To</th>
+            <th>Time (HH:MM)</th>
+        </tr>
+        @foreach (var schedule in Model)
+
+
+
+
+
+
+
+        {
+            @if (schedule.FirstTrain != TimeSpan.Zero) // Check if the time is not 00:00
+
+
+
+
+
+
+
+            {
+                <tr>
+                    <td>@((ViewData["Stations"] as List<Station>)?.FirstOrDefault(s => s.StationId ==
+                            schedule.StationIdFrom)?.StationName)</td>
+                    <td>@((ViewData["Stations"] as List<Station>)?.FirstOrDefault(s => s.StationId ==
+                            schedule.StationIdTo)?.StationName)</td>
+                    <td>@schedule.FirstTrain.ToString("hh\\:mm")</td>
+                </tr>
+            }
+        }
+    </table>
+
+    <h3>Last Train</h3>
+    <table>
+        <tr>
+            <th>From</th>
+            <th>To</th>
+            <th>Time (HH:MM)</th>
+        </tr>
+        @foreach (var schedule in Model)
+
+
+
+
+
+
+
+        {
+            @if (schedule.LastTrain != TimeSpan.Zero) // Check if the time is not 00:00
+
+
+
+
+
+
+
+            {
+                <tr>
+                    <td>@((ViewData["Stations"] as List<Station>)?.FirstOrDefault(s => s.StationId ==
+                            schedule.StationIdFrom)?.StationName)</td>
+                    <td>@((ViewData["Stations"] as List<Station>)?.FirstOrDefault(s => s.StationId ==
+                            schedule.StationIdTo)?.StationName)</td>
+                    <td>@schedule.LastTrain.ToString("hh\\:mm")</td>
+                </tr>
+            }
+        }
+    </table>
+
+    <!----------------------------------------  Footer------------------------------------------------------------>
+
+    <footer style="background-color: crimson; margin-top:2rem">
+        <div>
+            <span class="logo">Metro Router</span>
+        </div>
+
+        <div class="row">
+            <div class="col-3">
+                <div class="link-cat" onclick="footerToggle(this)">
+                    <span class="footer-toggle"></span>
+                    <span class="footer-cat">Solution</span>
+                </div>
+                <ul class="footer-cat-links">
+                    <li>
+                        <a href=""><span>Interprise App Development</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>Android App Development</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>ios App Development</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <div class="link-cat" onclick="footerToggle(this)">
+                    <span class="footer-toggle"></span>
+                    <span class="footer-cat">Industries</span>
+                </div>
+                <ul class="footer-cat-links">
+                    <li>
+                        <a href=""><span>Healthcare</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>Sports</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>ECommerce</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>Construction</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>Club</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <div class="link-cat" onclick="footerToggle(this)">
+                    <span class="footer-toggle"></span>
+                    <span class="footer-cat">Quick Links</span>
+                </div>
+                <ul class="footer-cat-links">
+                    <li>
+                        <a href=""><span>Reviews</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>Terms & Condition</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>Disclaimer</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>Site Map</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3" id="newsletter">
+                <span>Stay Connected</span>
+                <form id="subscribe">
+                    <input type="email" id="subscriber-email" placeholder="Enter Email Address" />
+                    <input type="submit" value="Subscribe" id="btn-scribe" />
+                </form>
+
+                <div class="social-links social-2">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-tumblr"></i></a>
+                    <a href=""><i class="fab fa-reddit-alien"></i></a>
+                </div>
+
+                <div id="address">
+                    <span>Office Location</span>
+                    <ul>
+                        <li>
+                            <i class="far fa-building"></i>
+                            <div>
+                                Los Angeles<br />
+                                Office 9B, Sky High Tower, New A Ring Road, Los Angeles
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-gopuram"></i>
+                            <div>
+                                Delhi<br />
+                                Office 150B, Behind Sana Gate Char Bhuja Tower, Station Road,
+                                Delhi
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-links social-1 col-6">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-tumblr"></i></a>
+                <a href=""><i class="fab fa-reddit-alien"></i></a>
+            </div>
+        </div>
+        <div id="copyright">&copy; All Rights Reserved</div>
+        <div id="owner">
+            <span>
+                Designed by <a href="https://www.codingtuting.com">.Com</a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="StyleiTechFooter.js"></script>
+
+
+    <script>
+        const rows = Array.from(document.querySelectorAll('tr'));
+
+        function slideOut(row) {
+            row.classList.add('slide-out');
+        }
+
+        function slideIn(row, index) {
+            setTimeout(function () {
+                row.classList.remove('slide-out');
+            }, (index + 5) * 200);
+        }
+
+        rows.forEach(slideOut);
+
+        rows.forEach(slideIn);
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+<!---------------------------------------------------- Origional Code -------------------------------------------->
+
+@*
+@using MyWebApp.Models
+@model List<MyWebApp.Models.TimeTable>
+
+<h2>Train Schedule</h2>
+
+<h3>First Train</h3>
+<table>
+<tr>
+<th>From</th>
+<th>To</th>
+<th>Time (HH:MM)</th>
+</tr>
+@foreach (var schedule in Model)
+
+{
+@if (schedule.FirstTrain != TimeSpan.Zero) // Check if the time is not 00:00
+
+{
+<tr>
+<td>@((ViewData["Stations"] as List<Station>)?.FirstOrDefault(s => s.StationId ==
+schedule.StationIdFrom)?.StationName)</td>
+<td>@((ViewData["Stations"] as List<Station>)?.FirstOrDefault(s => s.StationId ==
+schedule.StationIdTo)?.StationName)</td>
+<td>@schedule.FirstTrain.ToString("hh\\:mm")</td>
+</tr>
+}
+}
+</table>
+
+<h3>Last Train</h3>
+<table>
+<tr>
+<th>From</th>
+<th>To</th>
+<th>Time (HH:MM)</th>
+</tr>
+@foreach (var schedule in Model)
+
+{
+@if (schedule.LastTrain != TimeSpan.Zero) // Check if the time is not 00:00
+
+{
+<tr>
+<td>@((ViewData["Stations"] as List<Station>)?.FirstOrDefault(s => s.StationId ==
+schedule.StationIdFrom)?.StationName)</td>
+<td>@((ViewData["Stations"] as List<Station>)?.FirstOrDefault(s => s.StationId ==
+schedule.StationIdTo)?.StationName)</td>
+<td>@schedule.LastTrain.ToString("hh\\:mm")</td>
+</tr>
+}
+}
+</table> *@

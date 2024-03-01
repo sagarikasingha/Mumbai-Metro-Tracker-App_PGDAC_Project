@@ -1,0 +1,404 @@
+@model MyWebApp.Models.Feedback
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Feedback Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!------------------------------------------------------->
+      <script src="UserLogin.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+     
+    <link href="/index.css" rel="stylesheet">
+     <link
+      href="https://fonts.googleapis.com/css?family=Lato|Nanum+Gothic:700|Raleway&display=swap"
+      rel="stylesheet"
+    /> 
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+      rel="stylesheet"
+    />
+
+    <!------------------------------------ Styling ---------------------------------------->
+       
+<style>
+      /* Google Fonts - Poppins */
+@* 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+} *@
+.container{
+    width:  100%;
+}
+    .box{
+        position: relative;
+        width: 380px;
+        height: 420px;
+        background: #1c1c1c;
+        border-radius: 8px;
+        overflow: hidden;
+       margin:5rem 0rem 5rem 36rem ;
+    }
+    .box::before{
+        content: '';
+        position: absolute;
+        top: -50%;
+        left:-50% ;
+        width: 320px;
+        height: 420px;
+        background:linear-gradient(0deg,transparent,#FF8911,
+        transparent,#FF8911) ;
+        transform-origin: bottom right;
+        animation: animate 6s linear infinite;
+    }
+    .box::after{
+        content: '';
+        position: absolute;
+        top: -50%;
+        left:-50% ;
+        width: 320px;
+        height: 420px;
+        background:linear-gradient(10deg,transparent,#FF8911,
+        transparent,#FF8911) ;
+        transform-origin: bottom right;
+        animation: animate 6s linear infinite;
+        animation-delay: -3s;
+    }
+    @@keyframes animate{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+ 
+     h2{
+		color: #FF8911;
+		font-weight: 500;
+		text-align: center;
+		letter-spacing: 0.1em;
+	}
+	.inputbox{
+		position: relative;
+		width: 300px;
+		margin-top: 35px;
+
+}
+
+.inputbox input{
+	position: relative;
+	width: 100%;
+	padding: 20px 10px 10px;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #23242a;
+	font-size: 1em;
+	letter-spacing: 0.05em;
+	z-index: 10;
+}
+
+.inputbox span{
+	position: absolute;
+	left: 0;
+	padding: 20px 0px 10px;
+	font-size: 1em;
+	color: #8f8f8f;
+	pointer-events: none;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+}
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span
+{
+	color: #FF8911;
+	transform:translateX(0px) translateY(-34px);
+	font-size: 0.75em;
+}
+.inputbox i{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: #FF8911;
+	border-radius: 4px;
+	transition: 0.5s;
+	pointer-events: none;
+}
+.inputbox input:valid ~ i,
+.inputbox input:focus ~ i{
+  height: 44px;
+}
+.links{
+	display: flex;
+	justify-content: space-between;
+}
+.links a{
+	margin: 10px 0;
+	font-size: 0.75em;
+	color: #8f8f8f;
+	text-decoration: none;
+}
+.links a:hover,
+.links a:nth-child(2){
+	color: #FF8911;
+}
+
+
+    </style> 
+    
+  
+</head>
+
+<body>
+    <!--------------------------------- Nav Bar ------------------------------------------>
+    <header>
+        <img src="~/images/site_logo.png" alt="Site Logo" srcset="" />
+
+        <nav>
+            <ul class="navigate_links">
+        <li><a href="@Url.Content("~/index.html")">Home</a></li>
+        <li><a href="@Url.Content("~/about.html")">About</a></li>
+        <li><a href="@Url.Content("~/blog.html")">Blog</a></li>
+        <li><a href="@Url.Content("http://localhost:5109/Home/FeedbackForm")">Feedback</a></li>
+      </ul>
+        </nav>
+        <a class="signin" href="http://localhost:5109/Home/UserLogin">
+            <button style="background-color: #FF8911">User Login</button>
+        </a>
+
+        <a class="signin" href="http://localhost:5109/Home/UserRegistration">
+            <button style="background-color: #FF8911">User Registration</button>
+        </a>
+
+        <a class="signin" href="http://localhost:5109/Home/AdminLogin">
+            <button style="background-color: #FF8911">Admin Login</button>
+        </a>
+    </header>
+    <!------------------------------ End of Header --------------------------------------->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6  mt-4 shadow-lg p-3 mb-5 bg-body-tertiary rounded  text-center">
+                <img src="~/images/Designer (20).jpeg" class="img-fluid img-thumbnail" alt="image not loaded"
+                    width="800" height="800">
+                <br />
+
+            </div>
+            <div class=" text-center col-md-6 bg-info bg-opacity-10 border border-info  rounded-end">
+                <h1 class="fw-semibold">Feedback Form</h1>
+                <hr />
+                <form class="row g-3" asp-action="SubmitFeedback" method="post">
+                    <div class="col-md-12">
+                        <label for="EmailId" class="form-label">Email Address:</label>
+                        <input type="email" class="form-control" id="EmailId" name="EmailId">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="OverallRating" class="form-label">Overall Rating:</label>
+                        <input type="number" class="form-control" id="OverallRating" name="OverallRating" min="1" max="5" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="CleanlinessRating" class="form-label">Cleanliness Rating:</label>
+                        <input type="number" class="form-control" id="CleanlinessRating" name="CleanlinessRating" min="1" max="5" required>
+
+                    </div>
+                    <div class="col-md-6">
+                        <label for="FacilitiesRating" class="form-label">Facilities Rating:</label>
+                        <input type="number" class="form-control" id="FacilitiesRating" name="FacilitiesRating" min="1" max="5" required>
+                    </div>
+                        <div class="col-md-6">
+                            <label for="AccessibilityRating" class="form-label">Accessibility Rating:</label>
+                            <input type="number" class="form-control" id="AccessibilityRating" name="AccessibilityRating" min="1" max="5"
+                                required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="Suggestions" class="form-label">Suggestions:</label><br>
+                            <textarea id="Suggestions" class="form-control" name="Suggestions" rows="4" cols="50" required></textarea>
+
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                        </div>
+                        <p id="para"></p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    
+     <!----------------------------------------  Footer------------------------------------------------------------>
+
+    <footer style="background-color: #FF8911;">
+      <div>
+        <span class="logo">Metro Router</span>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <div class="link-cat" onclick="footerToggle(this)">
+            <span class="footer-toggle"></span>
+            <span class="footer-cat">About MMRC</span>
+          </div>
+          <ul class="footer-cat-links">
+            <li>
+              <a href="https://mmrcl.com/en/tenders/tenders-published"><span>Tenders</span></a>
+            </li>
+            <li>
+              <a href="https://mmrcl.com/en/project/project-route"><span>Project</span></a>
+            </li>
+            <li>
+              <a href="https://mmrcl.com/en/media-centre/news"><span>News</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <div class="link-cat" onclick="footerToggle(this)">
+            <span class="footer-toggle"></span>
+            <span class="footer-cat">Policy</span>
+          </div>
+          <ul class="footer-cat-links">
+            <li>
+              <a href="https://mmrcl.com/en/about-mmrc/mmrc-green-policy"><span>MMRC Green Policy</span></a>
+            </li>
+            <li>
+              <a href="https://mmrcl.com/en/policy/disclaimer"><span>Disclaimer</span></a>
+            </li>
+            <li>
+              <a href="https://mmrcl.com/map/"><span>Project Route</span></a>
+            </li>
+            <li>
+              <a href="https://mmrcl.com/en/policy/privacy-policy"><span>Privacy Policy</span></a>
+            </li>
+            <li>
+              <a href="https://mmrcl.com/en/other-govt-sites/other-metros"><span>Other Metros</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <div class="link-cat" onclick="footerToggle(this)">
+            <span class="footer-toggle"></span>
+            <span class="footer-cat">Other Govt Sites</span>
+          </div>
+          <ul class="footer-cat-links">
+            <li>
+              <a href="https://mohua.gov.in/"><span>Govt of India</span></a>
+            </li>
+            <li>
+              <a href="https://mohua.gov.in/"><span>MoHUA</span></a>
+            </li>
+            <li>
+              <a href="https://indianrailways.gov.in/"><span>Indian Railways</span></a>
+            </li>
+            <li>
+              <a href="https://mmrda.maharashtra.gov.in/"><span>MMRDA</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3" id="newsletter">
+          <span>Stay Connected</span>
+          <form id="subscribe">
+            <input
+              type="email"
+              id="subscriber-email"
+              placeholder="Enter Email Address"
+            />
+            <input type="submit" value="Subscribe" id="btn-scribe" />
+          </form>
+
+          <div class="social-links social-2">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-tumblr"></i></a>
+            <a href=""><i class="fab fa-reddit-alien"></i></a>
+          </div>
+
+          <div id="address">
+            <span>Office Location</span>
+            <ul>
+              <li>
+                <i class="far fa-building"></i>
+                <div>
+                  Los Angeles<br />
+                  Office 9B, Sky High Tower, New A Ring Road, Los Angeles
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-gopuram"></i>
+                <div>
+                  Delhi<br />
+                  Office 150B, Behind Sana Gate Char Bhuja Tower, Station Road,
+                  Delhi
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="social-links social-1 col-6">
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-linkedin-in"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-tumblr"></i></a>
+          <a href=""><i class="fab fa-reddit-alien"></i></a>
+        </div>
+      </div>
+      <div id="copyright">&copy; All Rights Reserved</div>
+      <div id="owner">
+        <span>
+          Designed by <a href="https://www.codingtuting.com">.Com</a>
+        </span>
+      </div>
+    </footer>
+
+</body>
+</html>
+
+
+
+<!-----------------------------------original code----------------------------------------------------------->
+@*    
+    <h2>Feedback Form</h2>
+    <form asp-action="SubmitFeedback" method="post">
+        <div>
+            <label for="EmailId">Email Address:</label>
+            <input type="email" id="EmailId" name="EmailId" required>
+        </div>
+        <div>
+            <label for="OverallRating">Overall Rating:</label>
+            <input type="number" id="OverallRating" name="OverallRating" min="1" max="5" required>
+        </div>
+        <div>
+            <label for="CleanlinessRating">Cleanliness Rating:</label>
+            <input type="number" id="CleanlinessRating" name="CleanlinessRating" min="1" max="5" required>
+        </div>
+        <div>
+            <label for="FacilitiesRating">Facilities Rating:</label>
+            <input type="number" id="FacilitiesRating" name="FacilitiesRating" min="1" max="5" required>
+        </div>
+        <div>
+            <label for="AccessibilityRating">Accessibility Rating:</label>
+            <input type="number" id="AccessibilityRating" name="AccessibilityRating" min="1" max="5" required>
+        </div>
+        <div>
+            <label for="Suggestions">Suggestions:</label><br>
+            <textarea id="Suggestions" name="Suggestions" rows="4" cols="50" required></textarea>
+        </div>
+        <button type="submit">Submit Feedback</button>
+    </form>
+</body>
+
+</html> *@
